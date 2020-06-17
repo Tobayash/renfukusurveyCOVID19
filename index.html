@@ -6,22 +6,7 @@
 </head>
 
 
-<!--jQueryを読み込み-->
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script>
-// but this might not work as expected
-$('form').submit(function(){
-  // code goes here
-});
-// So, better USE THIS INSTEAD:
-$('button[type="submit"]').on('click', function() {
-  // skipping validation part mentioned above
-});
-</script>
-
+<body>
 <!--"form"に"action="URL" method=POST"を追加する-->
 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe3RpCwNUmev1621Ia4ZEdvqjP5EBl6Jw1XtiA1_FE9LYNYGQ/formResponse" method=POST>
 
@@ -134,4 +119,4 @@ $('button[type="submit"]').on('click', function() {
     <button type="submit">送信</button>
 
 </form>
-
+</body>
