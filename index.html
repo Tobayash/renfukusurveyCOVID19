@@ -1,0 +1,129 @@
+<!--jQueryを読み込み-->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script>
+// but this might not work as expected
+$('form').submit(function(){
+  // code goes here
+});
+// So, better USE THIS INSTEAD:
+$('button[type="submit"]').on('click', function() {
+  // skipping validation part mentioned above
+});
+</script>
+
+<!--"form"に"action="URL" method=POST"を追加する-->
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe3RpCwNUmev1621Ia4ZEdvqjP5EBl6Jw1XtiA1_FE9LYNYGQ/formResponse" method=POST>
+
+<!--divはブロックを作る-->
+<!--pは一行を作る-->
+<!--valueはGoogle formで入力しているものとそろえる必要がある-->
+
+  <div>
+    <h1>
+  　サンプルフォーム
+    </h1>
+  </div>
+
+ <!--質問項目：記述式の書き方-->
+ <!--"input"のところにnameを入れる-->
+  <div>
+    <label>お名前</label>
+    <input type="text" placeholder="記述式テキスト"name="entry.262412200" required/>
+  </div>
+
+ <!--質問項目：段落の書き方-->
+ <!--"textarea"のところにnameを入れる-->
+  <div>
+    <label2>質問内容</label2>
+    <textarea placeholder="記述式テキスト"name="entry.2057722733" required></textarea>
+  </div>
+
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div>
+    <p><label>Q1. 次から選んでください</label></p>
+      <p>
+        <input name="entry.1488582432" type="radio" value="大阪" required/><span>大阪</span>
+        <input name="entry.1488582432" type="radio" value="東京" required/><span>東京都</span>
+      </p>
+      <p>
+        <input name="entry.1488582432" type="radio" value="名古屋" required/><span>名古屋</span>
+        <input name="entry.1488582432" type="radio" value="福島" required/><span>福島</span>
+      </p>
+  </div>
+
+
+ <!--質問項目：プルダウンの書き方-->
+ <!--"select"がプルダウン。"select"のところにnameを入れる-->
+ <!--required属性を機能させるためには一番上のoption valueを""(空欄)にする-->
+  <div>
+    <label>Q2. 次から選んでください<span style="color: red;">*</span></label><br>
+      <select name="entry.87606798" required>
+        <option value="">Choose</option>
+        <option value="選択肢1">選択肢1</option>
+        <option value="選択肢2">選択肢2</option>
+        <option value="選択肢3">選択肢3</option>
+        <option value="選択肢4">選択肢4</option>
+      </select>
+  </div>
+
+ <!--質問項目：チェックボックスの書き方-->
+ <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
+ <!>
+ <p>
+    <label>Q3. 次から選んでください</label>
+ </p>
+ <div>
+    <p><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-01" value="チェックボックスA"><label for="entry.1822244211-01">チェックボックスA</label></p>
+    <p><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-02" value="チェックボックスB"><label for="entry.1822244211-02">チェックボックスB</label></p>
+    <p><input class="check other" type="checkbox" name="entry.1822244211" id="entry.1822244211-03" value="チェックボックスC"><label for="entry.1822244211-03">チェックボックス</label></p>
+    <p><input type="checkbox" name="entry.1822244211" id="entry.1822244211_control" value="チェックボックスD" required>いずれもあてはまらない</p>
+ </div>
+  
+  <!-- jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script>
+    //====================
+    //チェックボックス必須化
+    //====================
+      $(function() {
+          //チェックしたら発火
+          $('.check').change(function() {
+   
+              //選択したinputのname値を変数に格納
+              var name = $(this).attr('name');
+   
+              //control用のIDを連結
+              var control_name = name + '_control';
+              var control_checkbox = document.getElementById( control_name );
+ 
+              //チェックされているチェックボックスの数が0より多い場合
+              if ($("input[name='" + name + "']:checked").length > 0) {
+                  //チェック有効
+                  control_checkbox.required = false;
+              } else {
+                  //チェック有効
+                  control_checkbox.required = true;
+              }
+          });
+      });
+  </script>
+
+
+
+ <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div>
+    <p><label>Q4. 次から選んでください</label></p>
+    <p><options>あてはまらない</options><options>どちらでもない</options><options>あてはまる</options></p>
+    <p><label>MCG1</label><input name="entry.1893614581" type="radio" value="あてはまらない" required/><input name="entry.1893614581" type="radio" value="どちらでもない" required/><input name="entry.1893614581" type="radio" value="あてはまる" required/></p>
+    <p><label>MCG2</label><input name="entry.506260730" type="radio" value="あてはまらない" required/><input name="entry.506260730" type="radio" value="どちらでもない" required/><input name="entry.506260730" type="radio" value="あてはまる" required/></p>
+    <p><label>MCG3</label><input name="entry.1017597430" type="radio" value="あてはまらない" required/><input name="entry.1017597430" type="radio" value="どちらでもない" required/><input name="entry.1017597430" type="radio" value="あてはまる" required/></p>
+  </div>
+
+    <button type="submit">送信</button>
+
+</form>
+
