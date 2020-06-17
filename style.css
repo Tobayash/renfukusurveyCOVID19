@@ -11,8 +11,12 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 20px;
+
+h1{
+   font-size: 3.125em;
+   color : #999999;
+   margin: 50px;
+   padding: 50px;
 }
 
 .container {
