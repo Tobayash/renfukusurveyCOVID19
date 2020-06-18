@@ -13,12 +13,12 @@ body {
 
 h1{
    font-size: 3.125em;
-   color : #999999;
+   color : #199999;
    margin: 50px;
    padding: 50px;
 }
 
-.radio {
+div.radio {
   font-size: 2.2vmin;
   padding-left:40px;
   padding-top:40px;
