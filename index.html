@@ -49,27 +49,25 @@
  <!--"select"がプルダウン。"select"のところにnameを入れる-->
  <!--required属性を機能させるためには一番上のoption valueを""(空欄)にする-->
   <div class="dropdown">
-    <label>Q2. 次から選んでください<span style="color: red;">*</span></label><br>
-      <select name="entry.87606798" required>
+    <div class="dropdown_text"><label>Q2. 次から選んでください<span style="color: red;">*</span></label></div>
+      <div class="dropdown_option"><select name="entry.87606798" required>
         <option value="">Choose</option>
         <option value="選択肢1">選択肢1</option>
         <option value="選択肢2">選択肢2</option>
         <option value="選択肢3">選択肢3</option>
         <option value="選択肢4">選択肢4</option>
-      </select>
+      </select></div>
   </div>
 
  <!--質問項目：チェックボックスの書き方-->
  <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
  <!>
  <div class="cbx">
-  <p>
-    <label>Q3. 次から選んでください</label>
- </p>
-    <p><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-01" value="チェックボックスA"><label for="entry.1822244211-01">チェックボックスA</label></p>
-    <p><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-02" value="チェックボックスB"><label for="entry.1822244211-02">チェックボックスB</label></p>
-    <p><input class="check other" type="checkbox" name="entry.1822244211" id="entry.1822244211-03" value="チェックボックスC"><label for="entry.1822244211-03">チェックボックス</label></p>
-    <p><input type="checkbox" name="entry.1822244211" id="entry.1822244211_control" value="チェックボックスD" required>いずれもあてはまらない</p>
+  <div class="cbx_text"><label>Q3. 次から選んでください</label></div>
+    <div><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-01" value="チェックボックスA"><label for="entry.1822244211-01">チェックボックスA</label></div>
+    <div><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-02" value="チェックボックスB"><label for="entry.1822244211-02">チェックボックスB</label></div>
+    <div><input class="check other" type="checkbox" name="entry.1822244211" id="entry.1822244211-03" value="チェックボックスC"><label for="entry.1822244211-03">チェックボックス</label></div>
+    <div><input type="checkbox" name="entry.1822244211" id="entry.1822244211_control" value="チェックボックスD" required>いずれもあてはまらない</div>
  </div>
   
   <!-- jQueryの読み込み -->
