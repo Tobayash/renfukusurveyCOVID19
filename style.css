@@ -163,6 +163,15 @@ div.para {
   font-size: 2.2vmin;
 }
 
+textarea {
+  margin-left:10px;
+  margin-right:10px;
+  line-height: 1.5em;
+}
+
 button {
-  margin-left: 30px
+  margin-left: 30px;
+  padding-left:40px;
+  padding-right:40px;
+  font-size: 3.125em;
 }
