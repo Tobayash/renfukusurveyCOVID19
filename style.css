@@ -20,6 +20,7 @@ h1{
 
 div.radio {
   background: #FFFFFF;
+  color: #000000;
   font-size: 2.2vmin;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
