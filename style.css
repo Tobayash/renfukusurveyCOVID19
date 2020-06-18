@@ -7,12 +7,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Noto Sans Japanese';
+  font-size: 3.125em
   color: #8CC63F;
   background: #000000;
 }
 
 h1{
-   font-size: 3.125em;
+   font-size: 5em;
    color : #669999;
    margin: 50px;
    padding: 50px;
