@@ -28,7 +28,7 @@ div.radio {
   padding-bottom:40px;
 }
 
-p.radio_text {
+div.radio_text {
   grid-column-start: 1;
   grid-column-end: 4;
 }
