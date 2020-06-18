@@ -16,42 +16,37 @@
 
   <div>
     <h1>
-  　サンプルフォーム
+  　○○に関するアンケート
     </h1>
   </div>
 
  <!--質問項目：記述式の書き方-->
  <!--"input"のところにnameを入れる-->
+ <fieldset>
+   <legend>登録情報</legend>
  <div class="texts">
   <div class="text">
-    <label>お名前</label>
-    <input type="text" placeholder="記述式テキスト"name="entry.262412200" required/>
-  </div>
-
- <!--質問項目：段落の書き方-->
- <!--"textarea"のところにnameを入れる-->
-  <div class="para">
-    <label2>質問内容</label2>
-    <textarea placeholder="記述式テキスト"name="entry.2057722733" required></textarea>
+    <p><label>お名前</label></p>
+    <p><input type="text" placeholder="本名じゃなくてもいいです"name="entry.262412200" required/></p>
   </div>
  </div>
 
  <!--質問項目：ラジオボタンの書き方-->
  <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
   <div class="radio">
-    <div class="radio_text"><label>Q1. 次から選んでください</label></div>
-      <div class="radio_options1"><input name="entry.1488582432" type="radio" value="大阪" required/><span>大阪</span></div>
-      <div class="radio_options2"><input name="entry.1488582432" type="radio" value="東京" required/><span>東京都</span></div>
-      <div class="radio_options3"><input name="entry.1488582432" type="radio" value="名古屋" required/><span>名古屋</span></div>
-      <div class="radio_options4"><input name="entry.1488582432" type="radio" value="福島" required/><span>福島</span></div>
+    <div class="radio_text"><label>年齢<span style="color: red;">*</span></label></div>
+      <div class="radio_options1"><input name="entry.1488582432" type="radio" value="20代以下" required/><span>20代以下</span></div>
+      <div class="radio_options2"><input name="entry.1488582432" type="radio" value="30代" required/><span>30代</span></div>
+      <div class="radio_options3"><input name="entry.1488582432" type="radio" value="40代" required/><span>40代</span></div>
+      <div class="radio_options4"><input name="entry.1488582432" type="radio" value="50代以上" required/><span>50代以上</span></div>
   </div>
-
+ </fieldset>
 
  <!--質問項目：プルダウンの書き方-->
  <!--"select"がプルダウン。"select"のところにnameを入れる-->
  <!--required属性を機能させるためには一番上のoption valueを""(空欄)にする-->
   <div class="dropdown">
-    <div class="dropdown_text"><label>Q2. 次から選んでください<span style="color: red;">*</span></label></div>
+    <div class="dropdown_text"><label>Q1. 次から選んでください<span style="color: red;">*</span></label></div>
       <div class="dropdown_option"><select name="entry.87606798" required>
         <option value="">Choose</option>
         <option value="選択肢1">選択肢1</option>
@@ -65,7 +60,7 @@
  <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
  <!>
  <div class="cbx">
-  <div class="cbx_text"><label>Q3. 次から選んでください</label></div>
+  <div class="cbx_text"><label>Q3. 次から選んでください<span style="color: red;">*</span></label></div>
     <div><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-01" value="チェックボックスA"><label for="entry.1822244211-01">チェックボックスA</label></div>
     <div><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-02" value="チェックボックスB"><label for="entry.1822244211-02">チェックボックスB</label></div>
     <div><input class="check other" type="checkbox" name="entry.1822244211" id="entry.1822244211-03" value="チェックボックスC"><label for="entry.1822244211-03">チェックボックス</label></div>
@@ -106,7 +101,7 @@
  <!--質問項目：マルチプルチョイスグリッドの書き方-->
   <div class="mltcg">
     <!--質問文-->
-    <div class="mltcg_text"><label>Q4. 次から選んでください</label></div>
+    <div class="mltcg_text"><label>Q4. 次から選んでください<span style="color: red;">*</span></label></div>
     
     <!--選択肢-->
     <div class="mltcg_options1"><options>あてはまらない</options></div>
@@ -127,6 +122,15 @@
       <div class="mltcg_items3b"><input name="entry.1017597430" type="radio" value="どちらでもない" required/></div>
       <div class="mltcg_items3c"><input name="entry.1017597430" type="radio" value="あてはまる" required/></div>
   </div>
+  
+     <!--質問項目：段落の書き方-->
+ <!--"textarea"のところにnameを入れる-->
+  <div class="para">
+    <label2>最後に感想をお聞かせください</label2><br>
+    <textarea placeholder="読書とか"name="entry.2057722733" required></textarea>
+  </div>
+ </div>
+  
 
   <button type="submit">送信</button>
 
