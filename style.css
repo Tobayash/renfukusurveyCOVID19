@@ -9,7 +9,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Noto Sans Japanese';
-  font-size: 3em
+  font-size: 15px;
   color: #8CC63F;
   background: #FFFFFF;
 }
@@ -21,12 +21,13 @@ h1{
 }
 
 h2{
-   font-size: 1rem;
-   padding-left:20px;
+  font-size: 20px;
+  padding-left:20px;
 }
 
 p.message {
-   padding-left:20px;
+  padding-left:20px;
+  font-size:15px;
 }
 
 /*同意チェック用css*/
@@ -40,7 +41,7 @@ div.cbx_doui {
   padding-bottom:20px;
   background: #FFFFFF;
   color: #000000;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 
@@ -70,6 +71,7 @@ div.dropdown {
   grid-column-start: 2;
   grid-column-end: 4;
   padding-left: 20px;
+  font-size: 15px;
 }
 
 /*ラジオボタン用css*/
@@ -96,7 +98,7 @@ div.radio_o2 {
 
 .radio_options {
   padding-bottom: 10px;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 /*ラジオボタン用css*/
@@ -147,43 +149,43 @@ div.mltcg_o7 {
   grid-column-start: 2;
   grid-column-end: 3;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o7_options2 {
   grid-column-start: 3;
   grid-column-end: 4;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o7_options3 {
   grid-column-start: 4;
   grid-column-end: 5;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o7_options4 {
   grid-column-start: 5;
   grid-column-end: 6;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o7_options5 {
   grid-column-start: 6;
   grid-column-end: 7;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o7_options6 {
   grid-column-start: 7;
   grid-column-end: 8;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o7_options7 {
   grid-column-start: 8;
   grid-column-end: 9;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 
 /*Multiple Choice Grid用css*/
@@ -212,31 +214,31 @@ div.mltcg_o5 {
   grid-column-start: 2;
   grid-column-end: 3;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o5_options2 {
   grid-column-start: 3;
   grid-column-end: 4;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o5_options3 {
   grid-column-start: 4;
   grid-column-end: 5;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o5_options4 {
   grid-column-start: 5;
   grid-column-end: 6;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 .mltcg_o5_options5 {
   grid-column-start: 6;
   grid-column-end: 7;
   padding-bottom: 10px;
-  font-size: 2.2vmin;
+  font-size: 10px;
 }
 
 
