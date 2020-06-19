@@ -42,11 +42,7 @@ div.cbx_doui {
   color: #000000;
 }
 
-.cbx_text {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  padding-bottom: 10px;
-}
+
 
 /*プルダウン用css*/
 div.dropdown {
