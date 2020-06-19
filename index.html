@@ -8,7 +8,7 @@
 
 <body>
 <!--"form"に"action="URL" method=POST"を追加する-->
-<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe3RpCwNUmev1621Ia4ZEdvqjP5EBl6Jw1XtiA1_FE9LYNYGQ/formResponse" method=POST>
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfmjHdBSfO8_U6OfAc_nrzhLqFsd0CxIA-V24eIXkZTpJebaQ/formResponse" method=POST>
 
 <!--divはブロックを作る-->
 <!--pは一行を作る-->
@@ -16,53 +16,93 @@
 
   <div>
     <h1>
-  　○○に関するアンケート
+  　第１回　XXXXストレス実態調査
     </h1>
+    <h2>
+      XXXXのみなさま
+    </h2>
+    <p>このたび、XXXXでは、XXXXのみなさまの協力のもと、XXXXストレスに関する実態調査を行うことを企画いたしました。みなさまのより良い仕事環境の実現を願い、本調査の結果は政府や自治体への提言を行う基礎資料として使用される予定です。アンケートの中では、みなさま健康状態や経済状況などについてもお伺いします。回答時間は、およそ１５分です。</p>
+    <p>アンケートは、XXXXとして所属するすべての方々に配布されています。調査への参加は自由ですし、参加同意後もいつでも取りやめることができます。参加を拒否したり途中でやめることで不利益を被ることはありません。また、アンケートは匿名でのご回答となります。アンケート提出後は回答者の判別ができないため、提出した後にそれを撤回することができませんので予めご了承ください。</p>
+    <p>アンケートには必ずご本人がお答えください。また、本アンケートへの回答は１回のみでお願い申し上げます。アンケートが複数届いた場合は、２通目以降は無視してください。アンケートの回答には正解や不正解はございませんので、あまり考え込まず、感じた通りにお答えください。大切な調査ですので、それぞれの文章は読み飛ばさないようにお願い申し上げます。</p>
+  </div>
+  
+  <div>
+    <div><input class="check" type="checkbox" name="entry.88305497" value="私は上記の記載の内容に同意し、調査への誠実な回答に協力します。">私は上記の記載の内容に同意し、調査への誠実な回答に協力します。</div>
   </div>
 
- <!--質問項目：記述式の書き方-->
- <!--"input"のところにnameを入れる-->
- <fieldset>
-   <legend>登録情報</legend>
-  <div class="text">
-    <p><label>お名前</label></p>
-    <p><input type="text" placeholder="本名じゃなくてもいいです"name="entry.262412200" required/></p>
-  </div>
-
- <!--質問項目：ラジオボタンの書き方-->
- <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
-  <div class="radio">
-    <div class="radio_text"><label>年齢<span style="color: red;">*</span></label></div>
-      <div class="radio_options1"><input name="entry.1488582432" type="radio" value="20代以下" required/><span>20代以下</span></div>
-      <div class="radio_options2"><input name="entry.1488582432" type="radio" value="30代" required/><span>30代</span></div>
-      <div class="radio_options3"><input name="entry.1488582432" type="radio" value="40代" required/><span>40代</span></div>
-      <div class="radio_options4"><input name="entry.1488582432" type="radio" value="50代以上" required/><span>50代以上</span></div>
-  </div>
- </fieldset>
-
+  
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+  <h2>はじめに、あなたご自身についておうかがいします。</h2>
+  
  <!--質問項目：プルダウンの書き方-->
  <!--"select"がプルダウン。"select"のところにnameを入れる-->
  <!--required属性を機能させるためには一番上のoption valueを""(空欄)にする-->
   <div class="dropdown">
-    <div class="dropdown_text"><label>Q1. 次から選んでください<span style="color: red;">*</span></label></div>
-      <div class="dropdown_option"><select name="entry.87606798" required>
+    <div class="dropdown_text"><label>性別<span style="color: red;">*</span></label></div>
+      <div class="dropdown_option"><select name="entry.15269545" required>
         <option value="">Choose</option>
-        <option value="選択肢1">選択肢1</option>
-        <option value="選択肢2">選択肢2</option>
-        <option value="選択肢3">選択肢3</option>
-        <option value="選択肢4">選択肢4</option>
+        <option value="男性">男性</option>
+        <option value="女性">女性</option>
+        <option value="その他">その他</option>
       </select></div>
   </div>
-
+  
+  <div class="dropdown">
+    <div class="dropdown_text"><label>年齢<span style="color: red;">*</span></label></div>
+      <div class="dropdown_option"><select name="entry.2033640195" required>
+        <option value="">Choose</option>
+        <option value="10歳代">10歳代</option>
+        <option value="20歳代">20歳代</option>
+        <option value="30歳代">30歳代</option>
+        <option value="40歳代">40歳代</option>
+        <option value="50歳代">50歳代</option>
+        <option value="60歳代">60歳代</option>
+        <option value="70歳代以上">70歳代以上</option>
+      </select></div>
+  </div>
+  
+  <div class="dropdown">
+    <div class="dropdown_text"><label>国籍<span style="color: red;">*</span></label></div>
+      <div class="dropdown_option"><select name="entry.450752657" required>
+        <option value="">Choose</option>
+        <option value="日本">日本</option>
+        <option value="その他">その他</option>
+      </select></div>
+  </div>
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio">
+    <div class="radio_text"><label>配偶者の方はいらっしゃいますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options1"><input name="entry.958676113" type="radio" value="いる" required/><span>いる</span></div>
+      <div class="radio_options2"><input name="entry.958676113" type="radio" value="いない" required/><span>いない</span></div>
+  </div>
+  
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio">
+    <div class="radio_text"><label>扶養家族はいらっしゃいますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options1"><input name="entry.205964964" type="radio" value="いない" required/><span>いない</span></div>
+      <div class="radio_options2"><input name="entry.205964964" type="radio" value="１人いる" required/><span>１人いる</span></div>
+      <div class="radio_options3"><input name="entry.205964964" type="radio" value="２人いる" required/><span>２人いる</span></div>
+      <div class="radio_options4"><input name="entry.205964964" type="radio" value="３人以上いる" required/><span>３人以上いる</span></div>
+  </div>
+  
+  
  <!--質問項目：チェックボックスの書き方-->
  <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
  <!>
  <div class="cbx">
-  <div class="cbx_text"><label>Q3. 次から選んでください<span style="color: red;">*</span></label></div>
-    <div><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-01" value="チェックボックスA"><label for="entry.1822244211-01">チェックボックスA</label></div>
-    <div><input class="check" type="checkbox" name="entry.1822244211" id="entry.1822244211-02" value="チェックボックスB"><label for="entry.1822244211-02">チェックボックスB</label></div>
-    <div><input class="check other" type="checkbox" name="entry.1822244211" id="entry.1822244211-03" value="チェックボックスC"><label for="entry.1822244211-03">チェックボックス</label></div>
-    <div><input type="checkbox" name="entry.1822244211" id="entry.1822244211_control" value="チェックボックスD" required>いずれもあてはまらない</div>
+  <div class="cbx_text"><label>同居しているご家族について当てはまる方にチェックを入れてください<span style="color: red;">*</span></label></div>
+    <div><input type="checkbox" name="entry.459679949" id="entry.459679949_control" value="単身（ひとり暮らし）" required>単身（ひとり暮らし）</div>
+    <div><input class="check" type="checkbox" name="entry.459679949" id="entry.459679949-01" value="配偶者・パートナー"><label for="entry.459679949-01">配偶者・パートナー</label></div>
+    <div><input class="check other" type="checkbox" name="entry.459679949" id="entry.459679949-02" value="子ども"><label for="entry.459679949-02">子ども</label></div>
+    <div><input class="check" type="checkbox" name="entry.459679949" id="entry.459679949-03" value="父母（義父母）"><label for="entry.459679949-03">父母（義父母）</label></div>
+    <div><input class="check" type="checkbox" name="entry.459679949" id="entry.459679949-04" value="祖父母（義理の祖父母）"><label for="entry.459679949-04">祖父母（義理の祖父母）</label></div>
+    <div><input class="check other" type="checkbox" name="entry.459679949" id="entry.459679949-05" value="孫"><label for="entry.459679949-05">孫</label></div>
+    <div><input class="check other" type="checkbox" name="entry.459679949" id="entry.459679949-06" value="兄弟・姉妹（義理の兄弟・姉妹）"><label for="entry.459679949-06">兄弟・姉妹（義理の兄弟・姉妹）</label></div>
+    <div><input class="check other" type="checkbox" name="entry.459679949" id="entry.459679949-07" value="その他"><label for="entry.459679949-06">その他</label><input type="text" placeholder="あなたとの関係性" name="entry.459679949.other_option_response"/></div>
  </div>
   
   <!-- jQueryの読み込み -->
@@ -93,43 +133,128 @@
           });
       });
   </script>
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio">
+    <div class="radio_text"><label>あなたのお仕事の主な業種についてお尋ねします<span style="color: red;">*</span></label></div>
+      <div class="radio_options1"><input name="entry.1748490513" type="radio" value="製造業" required/><span>製造業</span></div>
+      <div class="radio_options2"><input name="entry.1748490513" type="radio" value="サービス業" required/><span>サービス業</span></div>
+      <div class="radio_options3"><input name="entry.1748490513" type="radio" value="公務・公共" required/><span>公務・公共</span></div>
+      <div class="radio_options4"><input name="entry.1748490513" type="radio" value="その他" required/><span>その他</span><input type="text" placeholder="あなたの業種" name="entry.1748490513.other_option_response"/></div>
+  </div>
+  
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-
-
+ <h2>続いて、あなたの健康や気持ちについてお尋ねします。</h2>
  <!--質問項目：マルチプルチョイスグリッドの書き方-->
   <div class="mltcg">
     <!--質問文-->
-    <div class="mltcg_text"><label>Q4. 次から選んでください<span style="color: red;">*</span></label></div>
+    <div class="mltcg_text"><label>以下の項目で当てはまる数字を一つ選んでください。<span style="color: red;">*</span></label></div>
     
     <!--選択肢-->
-    <div class="mltcg_options1"><options>あてはまらない</options></div>
-    <div class="mltcg_options2"><options>どちらでもない</options></div>
-    <div class="mltcg_options3"><options>あてはまる</options></div>
+    <div class="mltcg_options1"><options>全くそう思わない</options></div>
+    <div class="mltcg_options2"><options>ほとんどそう思わない</options></div>
+    <div class="mltcg_options3"><options>あまりそう思わない</options></div>
+    <div class="mltcg_options1"><options>どちらともいえない</options></div>
+    <div class="mltcg_options2"><options>すこしそう思う</options></div>
+    <div class="mltcg_options3"><options>かなりそう思う</options></div>
+    <div class="mltcg_options3"><options>とてもそう思う</options></div>
     
     <!--項目とラジオボタン-->
-    <div class="mltcg_items1"><label>MCG1</label></div>
-      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="あてはまらない" required/></div>
-      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="どちらでもない" required/></div>
-      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="あてはまる" required/></div>
-    <div class="mltcg_items2"><label>MCG2</label></div>
-      <div class="mltcg_items2a"><input name="entry.506260730" type="radio" value="あてはまらない" required/></div>
-      <div class="mltcg_items2b"><input name="entry.506260730" type="radio" value="どちらでもない" required/></div>
-      <div class="mltcg_items2c"><input name="entry.506260730" type="radio" value="あてはまる" required/></div>
-    <div class="mltcg_items3"><label>MCG3</label></div>
-      <div class="mltcg_items3a"><input name="entry.1017597430" type="radio" value="あてはまらない" required/></div>
-      <div class="mltcg_items3b"><input name="entry.1017597430" type="radio" value="どちらでもない" required/></div>
-      <div class="mltcg_items3c"><input name="entry.1017597430" type="radio" value="あてはまる" required/></div>
+    <div class="mltcg_items1"><label>ほとんどの面で、私の人生は私の理想に近い</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="とてもそう思う" required/></div>
+    <div class="mltcg_items2"><label>私の人生は、とても素晴らしい状態だ</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="とてもそう思う" required/></div>
+    <div class="mltcg_items3"><label>私は自分の人生に満足している</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="とてもそう思う" required/></div>
+    <div class="mltcg_items2"><label>私はこれまで、自分の人生に求める大切なものを得てきた</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="とてもそう思う" required/></div>
+    <div class="mltcg_items3"><label>もう一度人生をやり直せるとしても、ほとんど何も変えないだろう</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="とてもそう思う" required/></div>
   </div>
   
-     <!--質問項目：段落の書き方-->
- <!--"textarea"のところにnameを入れる-->
-  <div class="para">
-    <label2>最後に感想をお聞かせください</label2><br>
-    <textarea placeholder="自由なご感想お待ちしております"name="entry.2057722733" required></textarea>
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg">
+    <!--質問文-->
+    <div class="mltcg_text"><label>過去３０日の間に、どれくらいの頻度で次のことがありましたか。当てはまる数字を選んでください。<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_options1"><options>全くない</options></div>
+    <div class="mltcg_options2"><options>少しだけ</options></div>
+    <div class="mltcg_options3"><options>ときどき</options></div>
+    <div class="mltcg_options1"><options>たいてい</options></div>
+    <div class="mltcg_options2"><options>いつも</options></div>
+    
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items1"><label>神経過敏に感じましたか。</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="いつも" required/></div>
+    <div class="mltcg_items1"><label>絶望的だと感じましたか。</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="いつも" required/></div>
+        <div class="mltcg_items1"><label>そわそわ、落ち着かなく感じましたか。</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="いつも" required/></div>
+        <div class="mltcg_items1"><label>気分が沈み込んで、何が起こっても気が晴れないように感じましたか。</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="いつも" required/></div>
+        <div class="mltcg_items1"><label>何をするのも骨折りだと感じましたか。</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="いつも" required/></div>
+        <div class="mltcg_items1"><label>自分は価値のない人間だと感じましたか</label></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="全くない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1893614581" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_items1a"><input name="entry.1893614581" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1893614581" type="radio" value="いつも" required/></div>
   </div>
- </div>
   
-
   <button type="submit">送信</button>
 
 </form>
