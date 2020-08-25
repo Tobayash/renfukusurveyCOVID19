@@ -111,6 +111,188 @@
       });
   </script>
  
+  <!--質問項目：チェックボックスの書き方-->
+ <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
+ <!>
+ <div class="cbx">
+  <div class="cbx_text"><label>同居している子どもについて当てはまる方にチェックを入れてください（複数回答可）<span style="color: red;">*</span></label></div>
+    <div class="cbx_options"><input type="checkbox" name="entry.1904514247_sentinel" id="entry.1904514247_sentinel_control" value="乳児（０～２歳）" required>乳児（０～２歳）</div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247_sentinel" id="entry.1904514247_sentinel-01" value="幼児（３～６歳）"><label for="entry.1904514247_sentinel-01">幼児（３～６歳）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247_sentinel" id="entry.1904514247_sentinel-02" value="小学生低学年（１～３年生）"><label for="entry.1904514247_sentinel-02">小学生低学年（１～３年生）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247_sentinel" id="entry.1904514247_sentinel-03" value="小学生高学年（４～６年生）"><label for="entry.1904514247_sentinel-03">小学生高学年（４～６年生）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247_sentinel" id="entry.1904514247_sentinel-04" value="中学生"><label for="entry.1904514247_sentinel-04">中学生</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247_sentinel" id="entry.1904514247_sentinel-05" value="高校生・高等専門学校生・高等専修学校生"><label for="entry.1904514247_sentinel-05">高校生・高等専門学校生・高等専修学校生</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247_sentinel" id="entry.1904514247_sentinel-06" value="大学生・大学院生・短大生・専門学校生"><label for="entry.1904514247_sentinel-06">大学生・大学院生・短大生・専門学校生</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247_sentinel" id="entry.1904514247_sentinel-07" value="社会人（アルバイトを含む）"><label for="entry.1904514247_sentinel-07">社会人（アルバイトを含む）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247_sentinel" id="entry.1904514247_sentinel-08" value="その他"><label for="entry.1904514247_sentinel-08">その他</label><input type="text" placeholder="あなたとの関係性" name="entry.1904514247_sentinel.other_option_response"/></div>
+ </div>
+  
+  <!-- jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script>
+    //====================
+    //チェックボックス必須化
+    //====================
+      $(function() {
+          //チェックしたら発火
+          $('.check').change(function() {
+   
+              //選択したinputのname値を変数に格納
+              var name = $(this).attr('name');
+   
+              //control用のIDを連結
+              var control_name = name + '_control';
+              var control_checkbox = document.getElementById( control_name );
+ 
+              //チェックされているチェックボックスの数が0より多い場合
+              if ($("input[name='" + name + "']:checked").length > 0) {
+                  //チェック有効
+                  control_checkbox.required = false;
+              } else {
+                  //チェック有効
+                  control_checkbox.required = true;
+              }
+          });
+      });
+  </script>
+ 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>あなたは障害者手帳をお持ちですか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.629451408_sentinel" type="radio" value="はい" required/><label>はい</label></div>
+      <div class="radio_options"><input name="entry.629451408_sentinel" type="radio" value="いいえ" required/><label>いいえ</label></div>
+  </div>
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>あなたは新型コロナウイルスの感染症に影響する糖尿病や呼吸器疾患などの基礎疾患をお持ちですか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1289574442_sentinel" type="radio" value="はい" required/><label>はい</label></div>
+      <div class="radio_options"><input name="entry.1289574442_sentinel" type="radio" value="いいえ" required/><label>いいえ</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>現在、あなたは精神疾患で精神科や心療内科で治療を受けていますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.489799179_sentinel" type="radio" value="はい" required/><label>はい</label></div>
+      <div class="radio_options"><input name="entry.489799179_sentinel" type="radio" value="いいえ" required/><label>いいえ</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>新型コロナウイルスに関して検疫の経験はありますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1378272707_sentinel" type="radio" value="はい" required/><label>はい</label></div>
+      <div class="radio_options"><input name="entry.1378272707_sentinel" type="radio" value="いいえ" required/><label>いいえ</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>自分自身や家族、同僚に新型コロナウイルスに感染経験のある方はいますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.2111865047_sentinel" type="radio" value="はい" required/><label>はい</label></div>
+      <div class="radio_options"><input name="entry.2111865047_sentinel" type="radio" value="いいえ" required/><label>いいえ</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>あなたのお仕事の業種（近いもの）についてお尋ねします<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.824288666_sentinel" type="radio" value="製造業" required/><label>製造業</label></div>
+      <div class="radio_options"><input name="entry.824288666_sentinel" type="radio" value="サービス業" required/><label>サービス業</label></div>
+      <div class="radio_options"><input name="entry.824288666_sentinel" type="radio" value="公務・公共" required/><label>公務・公共</label></div>
+      <div class="radio_options"><input name="entry.824288666_sentinel" type="radio" value="運輸・交通" required/><label>運輸・交通</label></div>
+      <div class="radio_options"><input name="entry.824288666_sentinel" type="radio" value="医療・介護" required/><label>医療・介護</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>あなたの職位についてお尋ねします<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.443763765_sentinel" type="radio" value="係長相当職以上" required/><label>係長相当職以上</label></div>
+      <div class="radio_options"><input name="entry.443763765_sentinel" type="radio" value="役職にはついていない" required/><label>役職にはついていない</label></div>
+  </div> 
+  
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>あなたの勤務先の地域についてお尋ねします<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.404926435_sentinel" type="radio" value="県北" required/><label>県北</label></div>
+      <div class="radio_options"><input name="entry.404926435_sentinel" type="radio" value="県中" required/><label>県中</label></div>
+      <div class="radio_options"><input name="entry.404926435_sentinel" type="radio" value="県南" required/><label>県南</label></div>
+      <div class="radio_options"><input name="entry.404926435_sentinel" type="radio" value="会津" required/><label>会津</label></div>
+      <div class="radio_options"><input name="entry.404926435_sentinel" type="radio" value="いわき" required/><label>いわき</label></div>
+      <div class="radio_options"><input name="entry.404926435_sentinel" type="radio" value="相双" required/><label>相双</label></div>
+      <div class="radio_options"><input name="entry.404926435_sentinel" type="radio" value="その他" required/><label>その他</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>あなたの最終学歴は次のどれですか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1970473144_sentinel" type="radio" value="中学まで" required/><label>中学まで</label></div>
+      <div class="radio_options"><input name="entry.1970473144_sentinel" type="radio" value="高校" required/><label>高校</label></div>
+      <div class="radio_options"><input name="entry.1970473144_sentinel" type="radio" value="短大・専門学校" required/><label>短大・専門学校</label></div>
+      <div class="radio_options"><input name="entry.1970473144_sentinel" type="radio" value="大学・大学院" required/><label>大学・大学院</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>現在の職場での在籍年数についてお尋ねします<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.477811772_sentinel" type="radio" value="1年目" required/><label>1年目</label></div>
+      <div class="radio_options"><input name="entry.477811772_sentinel" type="radio" value="３年以下" required/><label>3年以下</label></div>
+      <div class="radio_options"><input name="entry.477811772_sentinel" type="radio" value="５年以下" required/><label>5年以下</label></div>
+      <div class="radio_options"><input name="entry.477811772_sentinel" type="radio" value="10年以下" required/><label>10年以下</label></div>
+      <div class="radio_options"><input name="entry.477811772_sentinel" type="radio" value="15年以下" required/><label>15年以下</label></div>
+      <div class="radio_options"><input name="entry.477811772_sentinel" type="radio" value="それ以上" required/><label>それ以上</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>雇用形態（近いもの）についてお尋ねします。ここでの非正規社員とはアルバイト、パート契約社員、派遣社員等を指します。<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.546725023_sentinel" type="radio" value="正規社員" required/><label>正規社員</label></div>
+      <div class="radio_options"><input name="entry.546725023_sentinel" type="radio" value="非正規社員（有期）" required/><label>非正規社員（有期）</label></div>
+      <div class="radio_options"><input name="entry.546725023_sentinel" type="radio" value="非正規社員（無期）" required/><label>非正規社員（無期）</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>昨年の年収についてお尋ねします<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="50万円未満" required/><label>50万円未満</label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="50~99万円" required/><label>50~99万円</label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="100~149万円" required/><label>100~149万円</label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="150~199万円" required/><label>150~199万円</label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="200~299万円" required/><label>200~299万円</label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="300~399万円" required/><label>300~399万円</label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="400~499万円" required/><label>400~499万円</label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="500~699万円" required/><label>500~699万円</label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="700~999万円" required/><label>700~999万円</label></div>
+      <div class="radio_options"><input name="entry.1386160070_sentinel" type="radio" value="1000万円以上" required/><label>1000万円以上</label></div> 
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>現在の暮らし向きについて、経済的に見てどのように感じていますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1913881618_sentinel" type="radio" value="苦しい" required/><label>苦しい</label></div>
+      <div class="radio_options"><input name="entry.1913881618_sentinel" type="radio" value="やや苦しい" required/><label>やや苦しい</label></div>
+      <div class="radio_options"><input name="entry.1913881618_sentinel" type="radio" value="普通" required/><label>普通</label></div>
+      <div class="radio_options"><input name="entry.1913881618_sentinel" type="radio" value="ややゆとりがある" required/><label>ややゆとりがある</label></div>
+      <div class="radio_options"><input name="entry.1913881618_sentinel" type="radio" value="ゆとりがある" required/><label>ゆとりがある</label></div>
+  </div> 
+ 
+ <!--***********************************************************************************************************************************************************************--> 
+ <h2>続いて、あなたの健康や気持ちについてお尋ねします。</h2>
+ 
+ 
+ 
+ 
  </form>
  
  </body>
