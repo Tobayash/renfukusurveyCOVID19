@@ -10,7 +10,7 @@
 <!--"form"に"action="URL" method=POST"を追加する-->
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdfnJypBnz8rmbjsOW-PF7p2D_BNIuCXDlT57xHxtR3TbSMPQ/viewform?usp=sf_link" method=POST>
 
-<h2>はじめに、あなたご自身についておうかがいします。</h2>
+<h2>はじめに、あなたご自身についておうかがいします。最もあてはまるものを選んでください。</h2>
   
  <!--質問項目：プルダウンの書き方-->
  <!--"select"がプルダウン。"select"のところにnameを入れる-->
@@ -111,7 +111,7 @@
       });
   </script>
  
-  <!--質問項目：チェックボックスの書き方-->
+ <!--質問項目：チェックボックスの書き方-->
  <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
  <!>
  <div class="cbx">
@@ -289,9 +289,807 @@
  
  <!--***********************************************************************************************************************************************************************--> 
  <h2>続いて、あなたの健康や気持ちについてお尋ねします。</h2>
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o7">
+    <!--質問文-->
+    <div class="mltcg_o7_text"><label>以下の項目で当てはまる数字を一つ選んでください。<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o7_options1"><options>全くそう思わない</options></div>
+    <div class="mltcg_o7_options2"><options>ほとんどそう思わない</options></div>
+    <div class="mltcg_o7_options3"><options>あまりそう思わない</options></div>
+    <div class="mltcg_o7_options4"><options>どちらともいえない</options></div>
+    <div class="mltcg_o7_options5"><options>すこしそう思う</options></div>
+    <div class="mltcg_o7_options6"><options>かなりそう思う</options></div>
+    <div class="mltcg_o7_options7"><options>とてもそう思う</options></div>
+    
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items1"><label>ほとんどの面で、私の人生は私の理想に近い</label></div>
+      <div class="mltcg_items1a"><input name="entry.348429670_sentinel" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items1b"><input name="entry.348429670_sentinel" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items1c"><input name="entry.348429670_sentinel" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items1d"><input name="entry.348429670_sentinel" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items1e"><input name="entry.348429670_sentinel" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items1f"><input name="entry.348429670_sentinel" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items1g"><input name="entry.348429670_sentinel" type="radio" value="とてもそう思う" required/></div>
+    <div class="mltcg_items2"><label>私の人生は、とても素晴らしい状態だ</label></div>
+      <div class="mltcg_items2a"><input name="entry.2082386587_sentinel" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items2b"><input name="entry.2082386587_sentinel" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items2c"><input name="entry.2082386587_sentinel" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items2d"><input name="entry.2082386587_sentinel" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items2e"><input name="entry.2082386587_sentinel" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items2f"><input name="entry.2082386587_sentinel" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items2g"><input name="entry.2082386587_sentinel" type="radio" value="とてもそう思う" required/></div>
+    <div class="mltcg_items3"><label>私は自分の人生に満足している</label></div>
+      <div class="mltcg_items3a"><input name="entry.273759074_sentinel" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items3b"><input name="entry.273759074_sentinel" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items3c"><input name="entry.273759074_sentinel" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items3d"><input name="entry.273759074_sentinel" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items3e"><input name="entry.273759074_sentinel" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items3f"><input name="entry.273759074_sentinel" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items3g"><input name="entry.273759074_sentinel" type="radio" value="とてもそう思う" required/></div>
+    <div class="mltcg_items4"><label>私はこれまで、自分の人生に求める大切なものを得てきた</label></div>
+      <div class="mltcg_items4a"><input name="entry.1479222936_sentinel" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items4b"><input name="entry.1479222936_sentinel" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items4c"><input name="entry.1479222936_sentinel" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items4d"><input name="entry.1479222936_sentinel" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items4e"><input name="entry.1479222936_sentinel" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items4f"><input name="entry.1479222936_sentinel" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items4g"><input name="entry.1479222936_sentinel" type="radio" value="とてもそう思う" required/></div>
+    <div class="mltcg_items5"><label>もう一度人生をやり直せるとしても、ほとんど何も変えないだろう</label></div>
+      <div class="mltcg_items5a"><input name="entry.1367559392_sentinel" type="radio" value="全くそう思わない" required/></div>
+      <div class="mltcg_items5b"><input name="entry.1367559392_sentinel" type="radio" value="ほとんどそう思わない" required/></div>
+      <div class="mltcg_items5c"><input name="entry.1367559392_sentinel" type="radio" value="あまりそう思わない" required/></div>
+      <div class="mltcg_items5d"><input name="entry.1367559392_sentinel" type="radio" value="どちらともいえない" required/></div>
+      <div class="mltcg_items5e"><input name="entry.1367559392_sentinel" type="radio" value="すこしそう思う" required/></div>
+      <div class="mltcg_items5f"><input name="entry.1367559392_sentinel" type="radio" value="かなりそう思う" required/></div>
+      <div class="mltcg_items5g"><input name="entry.1367559392_sentinel" type="radio" value="とてもそう思う" required/></div>
+  </div>
+  
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o5">
+    <!--質問文-->
+    <div class="mltcg_o5_text"><label>過去３０日の間に、どれくらいの頻度で次のことがありましたか。当てはまる数字を選んでください。<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o5_options1"><options>全くない</options></div>
+    <div class="mltcg_o5_options2"><options>少しだけ</options></div>
+    <div class="mltcg_o5_options3"><options>ときどき</options></div>
+    <div class="mltcg_o5_options4"><options>たいてい</options></div>
+    <div class="mltcg_o5_options5"><options>いつも</options></div>
+    
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items"><label>神経過敏に感じましたか。</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1647473052_sentinel" type="radio" value="全くない" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1647473052_sentinel" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1647473052_sentinel" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1647473052_sentinel" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_itemse"><input name="entry.1647473052_sentinel" type="radio" value="いつも" required/></div>
+    <div class="mltcg_items"><label>絶望的だと感じましたか。</label></div>
+      <div class="mltcg_itemsa"><input name="entry.2084265130_sentinel" type="radio" value="全くない" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.2084265130_sentinel" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.2084265130_sentinel" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.2084265130_sentinel" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_itemse"><input name="entry.2084265130_sentinel" type="radio" value="いつも" required/></div>
+    <div class="mltcg_items"><label>そわそわ、落ち着かなく感じましたか。</label></div>
+      <div class="mltcg_itemsa"><input name="entry.647274568_sentinel" type="radio" value="全くない" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.647274568_sentinel" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.647274568_sentinel" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.647274568_sentinel" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_itemse"><input name="entry.647274568_sentinel" type="radio" value="いつも" required/></div>
+    <div class="mltcg_items"><label>気分が沈み込んで、何が起こっても気が晴れないように感じましたか。</label></div>
+      <div class="mltcg_itemsa"><input name="entry.300147771_sentinel" type="radio" value="全くない" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.300147771_sentinel" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.300147771_sentinel" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.300147771_sentinel" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_itemse"><input name="entry.300147771_sentinel" type="radio" value="いつも" required/></div>
+    <div class="mltcg_items"><label>何をするのも骨折りだと感じましたか。</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1904243192_sentinel" type="radio" value="全くない" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1904243192_sentinel" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1904243192_sentinel" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1904243192_sentinel" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_itemse"><input name="entry.1904243192_sentinel" type="radio" value="いつも" required/></div>
+    <div class="mltcg_items"><label>自分は価値のない人間だと感じましたか</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1814658186_sentinel" type="radio" value="全くない" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1814658186_sentinel" type="radio" value="少しだけ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1814658186_sentinel" type="radio" value="ときどき" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1814658186_sentinel" type="radio" value="たいてい" required/></div>
+      <div class="mltcg_itemse"><input name="entry.1814658186_sentinel" type="radio" value="いつも" required/></div>
+  </div>
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>あなたは過去１か月、睡眠によって休養が充分とれていますか。<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1638533731_sentinel" type="radio" value="充分とれている" required/><label>充分とれている</label></div>
+      <div class="radio_options"><input name="entry.1638533731_sentinel" type="radio" value="まあまあとれている" required/><label>まあまあとれている</label></div>
+      <div class="radio_options"><input name="entry.1638533731_sentinel" type="radio" value="あまりとれていない" required/><label>あまりとれていない</label></div>
+      <div class="radio_options"><input name="entry.1638533731_sentinel" type="radio" value="まったくとれていない" required/><label>まったくとれていない</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>１日に30分以上の運動を週に何日行っていますか。<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1233098540_sentinel" type="radio" value="運動無し" required/><label>運動無し</label></div>
+      <div class="radio_options"><input name="entry.1233098540_sentinel" type="radio" value="1日" required/><label>1日</label></div>
+      <div class="radio_options"><input name="entry.1233098540_sentinel" type="radio" value="2日" required/><label>2日</label></div>
+      <div class="radio_options"><input name="entry.1233098540_sentinel" type="radio" value="3日" required/><label>3日</label></div>
+      <div class="radio_options"><input name="entry.1233098540_sentinel" type="radio" value="4日" required/><label>4日</label></div>
+      <div class="radio_options"><input name="entry.1233098540_sentinel" type="radio" value="5日" required/><label>5日</label></div>
+      <div class="radio_options"><input name="entry.1233098540_sentinel" type="radio" value="6日" required/><label>6日</label></div>
+      <div class="radio_options"><input name="entry.1233098540_sentinel" type="radio" value="7日" required/><label>7日</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>その運動習慣はどれほど続いていますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1102782514_sentinel" type="radio" value="運動習慣はない" required/><label>運動習慣はない</label></div>
+      <div class="radio_options"><input name="entry.1102782514_sentinel" type="radio" value="半年未満" required/><label>半年未満</label></div>
+      <div class="radio_options"><input name="entry.1102782514_sentinel" type="radio" value="１年未満" required/><label>１年未満</label></div>
+      <div class="radio_options"><input name="entry.1102782514_sentinel" type="radio" value="１年以上" required/><label>１年以上</label></div>
+  </div>  
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>今年の３月以前に比べて喫煙量は増えましたか。<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.526469483_sentinel" type="radio" value="増えた" required/><label>増えた</label></div>
+      <div class="radio_options"><input name="entry.526469483_sentinel" type="radio" value="変わらない" required/><label>変わらない</label></div>
+      <div class="radio_options"><input name="entry.526469483_sentinel" type="radio" value="減った" required/><label>減った</label></div>
+  </div>  
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>今年の３月以前に比べてお酒の量は増えましたか。<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.46494410_sentinel" type="radio" value="増えた" required/><label>増えた</label></div>
+      <div class="radio_options"><input name="entry.46494410_sentinel" type="radio" value="変わらない" required/><label>変わらない</label></div>
+      <div class="radio_options"><input name="entry.46494410_sentinel" type="radio" value="減った" required/><label>減った</label></div>
+  </div>   
  
  
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o4">
+    <!--質問文-->
+    <div class="mltcg_o4_text"><label>あなたの仕事についてうかがいます。最もあてはまるものを選んでください。<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o4_options1"><options>そうだ</options></div>
+    <div class="mltcg_o4_options2"><options>まあそうだ</options></div>
+    <div class="mltcg_o4_options3"><options>ややちがう</options></div>
+    <div class="mltcg_o4_options4"><options>ちがう</options></div>
+   
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items"><label>非常にたくさんの仕事をしなければならない</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1444788472_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1444788472_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1444788472_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1444788472_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>時間内に仕事が処理しきれない</label></div>
+      <div class="mltcg_itemsa"><input name="entry.897450741_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.897450741_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.897450741_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.897450741_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>一生懸命働かなければならない</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1790921857_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1790921857_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1790921857_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1790921857_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>自分のペースで仕事ができる</label></div>
+      <div class="mltcg_itemsa"><input name="entry.469250621_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.469250621_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.469250621_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.469250621_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>自分で仕事の順番・やり方を決めることができる</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1164517212_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1164517212_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1164517212_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1164517212_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>職場の仕事の方針に自分の意見を反映できる</label></div>
+      <div class="mltcg_itemsa"><input name="entry.105161246_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.105161246_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.105161246_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.105161246_sentinel" type="radio" value="ちがう" required/></div>
+       <div class="mltcg_items"><label>自分の技能や知識を仕事で使うことが少ない</label></div>
+      <div class="mltcg_itemsa"><input name="entry.180558439_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.180558439_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.180558439_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.180558439_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>仕事の内容は自分にあっている</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1035457714_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1035457714_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1035457714_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1035457714_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>働きがいのある仕事だ</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1265350995_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1265350995_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1265350995_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1265350995_sentinel" type="radio" value="ちがう" required/></div>
+  </div>
  
+ 
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o4">
+    <!--質問文-->
+    <div class="mltcg_o4_text"><label>最近１か月間のあなたの状態についてうかがいます。最もあてはまるものを選んでください。<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o4_options1"><options>ほとんどなかった</options></div>
+    <div class="mltcg_o4_options2"><options>ときどきあった</options></div>
+    <div class="mltcg_o4_options3"><options>しばしばあった</options></div>
+    <div class="mltcg_o4_options4"><options>ほとんどいつもあった</options></div>
+   
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items"><label>怒りを感じる</label></div>
+      <div class="mltcg_itemsa"><input name="entry.387955548_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.387955548_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.387955548_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.387955548_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>内心腹立たしい</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1428076584_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1428076584_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1428076584_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1428076584_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>イライラしている</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1113209884_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1113209884_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1113209884_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1113209884_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>ひどく疲れた</label></div>
+      <div class="mltcg_itemsa"><input name="entry.2035094552_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.2035094552_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.2035094552_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.2035094552_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>へとへとだ</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1790962414_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1790962414_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1790962414_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1790962414_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>だるい</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1223954229_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1223954229_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1223954229_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1223954229_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>気がはりつめている</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1312471698_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1312471698_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1312471698_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1312471698_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>不安だ</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1801446179_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1801446179_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1801446179_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1801446179_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>落着かない</label></div>
+      <div class="mltcg_itemsa"><input name="entry.702408004_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.702408004_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.702408004_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.702408004_sentinel" type="radio" value="ほとんどいつもあった" required/></div>    
+    <div class="mltcg_items"><label>めまいがする</label></div>
+      <div class="mltcg_itemsa"><input name="entry.652439555_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.652439555_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.652439555_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.652439555_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>体のふしぶしが痛む</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1106555979_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1106555979_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1106555979_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1106555979_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>頭が重かったり頭痛がする</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1854178032_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1854178032_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1854178032_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1854178032_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>首筋や肩がこる</label></div>
+      <div class="mltcg_itemsa"><input name="entry.987471762_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.987471762_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.987471762_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.987471762_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>腰が痛い</label></div>
+      <div class="mltcg_itemsa"><input name="entry.378249707_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.378249707_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.378249707_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.378249707_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>目が疲れる</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1064862807_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1064862807_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1064862807_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1064862807_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>動悸や息切れがする</label></div>
+      <div class="mltcg_itemsa"><input name="entry.453763864_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.453763864_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.453763864_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.453763864_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>胃腸の具合が悪い</label></div>
+      <div class="mltcg_itemsa"><input name="entry.596233466_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.596233466_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.596233466_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.596233466_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>食欲がない</label></div>
+      <div class="mltcg_itemsa"><input name="entry.914923989_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.914923989_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.914923989_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.914923989_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>便秘や下痢をする</label></div>
+      <div class="mltcg_itemsa"><input name="entry.2092549146_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.2092549146_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.2092549146_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.2092549146_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+    <div class="mltcg_items"><label>よく眠れない</label></div>
+      <div class="mltcg_itemsa"><input name="entry.32870854_sentinel" type="radio" value="ほとんどなかった" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.32870854_sentinel" type="radio" value="ときどきあった" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.32870854_sentinel" type="radio" value="しばしばあった" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.32870854_sentinel" type="radio" value="ほとんどいつもあった" required/></div>
+  </div>
+ 
+ <!--***********************************************************************************************************************************************************************--> 
+ <h2>あなたの周りの方々についてうかがいます。最もあてはまるものを選んでください。</h2>
+ 
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o4">
+    <!--質問文-->
+    <div class="mltcg_o4_text"><label>次の人たちはどのくらい気軽に話ができますか？<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o4_options1"><options>非常に</options></div>
+    <div class="mltcg_o4_options2"><options>かなり</options></div>
+    <div class="mltcg_o4_options3"><options>多少</options></div>
+    <div class="mltcg_o4_options4"><options>全くない</options></div>
+   
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items"><label>上司</label></div>
+      <div class="mltcg_itemsa"><input name="entry.879975324_sentinel" type="radio" value="非常に" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.879975324_sentinel" type="radio" value="かなり" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.879975324_sentinel" type="radio" value="多少" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.879975324_sentinel" type="radio" value="全くない" required/></div>
+    <div class="mltcg_items"><label>職場の同僚</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1145607112_sentinel" type="radio" value="非常に" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1145607112_sentinel" type="radio" value="かなり" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1145607112_sentinel" type="radio" value="多少" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1145607112_sentinel" type="radio" value="全くない" required/></div>
+    <div class="mltcg_items"><label>配偶者、家族、友人等</label></div>
+      <div class="mltcg_itemsa"><input name="entry.466908080_sentinel" type="radio" value="非常に" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.466908080_sentinel" type="radio" value="かなり" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.466908080_sentinel" type="radio" value="多少" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.466908080_sentinel" type="radio" value="全くない" required/></div>
+  </div>
+ 
+   <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o4">
+    <!--質問文-->
+    <div class="mltcg_o4_text"><label>あなたが困った時、次の人たちはどのくらい頼りになりますか？<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o4_options1"><options>非常に</options></div>
+    <div class="mltcg_o4_options2"><options>かなり</options></div>
+    <div class="mltcg_o4_options3"><options>多少</options></div>
+    <div class="mltcg_o4_options4"><options>全くない</options></div>
+   
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items"><label>上司</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1915798139_sentinel" type="radio" value="非常に" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1915798139_sentinel" type="radio" value="かなり" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1915798139_sentinel" type="radio" value="多少" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1915798139_sentinel" type="radio" value="全くない" required/></div>
+    <div class="mltcg_items"><label>職場の同僚</label></div>
+      <div class="mltcg_itemsa"><input name="entry.2094456780_sentinel" type="radio" value="非常に" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.2094456780_sentinel" type="radio" value="かなり" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.2094456780_sentinel" type="radio" value="多少" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.2094456780_sentinel" type="radio" value="全くない" required/></div>
+    <div class="mltcg_items"><label>配偶者、家族、友人等</label></div>
+      <div class="mltcg_itemsa"><input name="entry.581023313_sentinel" type="radio" value="非常に" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.581023313_sentinel" type="radio" value="かなり" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.581023313_sentinel" type="radio" value="多少" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.581023313_sentinel" type="radio" value="全くない" required/></div>
+  </div>
+ 
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o4">
+    <!--質問文-->
+    <div class="mltcg_o4_text"><label>あなたの個人的な問題を相談したら、次の人たちはどのくらいきいてくれますか？<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o4_options1"><options>非常に</options></div>
+    <div class="mltcg_o4_options2"><options>かなり</options></div>
+    <div class="mltcg_o4_options3"><options>多少</options></div>
+    <div class="mltcg_o4_options4"><options>全くない</options></div>
+   
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items"><label>上司</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1608627260_sentinel" type="radio" value="非常に" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1608627260_sentinel" type="radio" value="かなり" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1608627260_sentinel" type="radio" value="多少" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1608627260_sentinel" type="radio" value="全くない" required/></div>
+    <div class="mltcg_items"><label>職場の同僚</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1995671228_sentinel" type="radio" value="非常に" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1995671228_sentinel" type="radio" value="かなり" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1995671228_sentinel" type="radio" value="多少" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1995671228_sentinel" type="radio" value="全くない" required/></div>
+    <div class="mltcg_items"><label>配偶者、家族、友人等</label></div>
+      <div class="mltcg_itemsa"><input name="entry.792282341_sentinel" type="radio" value="非常に" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.792282341_sentinel" type="radio" value="かなり" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.792282341_sentinel" type="radio" value="多少" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.792282341_sentinel" type="radio" value="全くない" required/></div>
+  </div>
+
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o4">
+    <!--質問文-->
+    <div class="mltcg_o4_text"><label>満足度についてうかがいます。最もあてはまるものを選んでください。<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o4_options1"><options>満足</options></div>
+    <div class="mltcg_o4_options2"><options>まあ満足</options></div>
+    <div class="mltcg_o4_options3"><options>やや不満足</options></div>
+    <div class="mltcg_o4_options4"><options>不満足</options></div>
+   
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items"><label>仕事に満足だ</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1039388470_sentinel" type="radio" value="満足" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1039388470_sentinel" type="radio" value="まあ満足" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1039388470_sentinel" type="radio" value="やや不満足" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1039388470_sentinel" type="radio" value="不満足" required/></div>
+    <div class="mltcg_items"><label>家庭生活に満足だ</label></div>
+      <div class="mltcg_itemsa"><input name="entry.575759191_sentinel" type="radio" value="満足" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.575759191_sentinel" type="radio" value="まあ満足" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.575759191_sentinel" type="radio" value="やや不満足" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.575759191_sentinel" type="radio" value="不満足" required/></div>
+  </div>
+
+ 
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o4">
+    <!--質問文-->
+    <div class="mltcg_o4_text"><label>あなたのお仕事の状況や成果についてうかがいます。最もあてはまるものを選んでください。<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o4_options1"><options>そうだ</options></div>
+    <div class="mltcg_o4_options2"><options>まあそうだ</options></div>
+    <div class="mltcg_o4_options3"><options>ややちがう</options></div>
+    <div class="mltcg_o4_options4"><options>ちがう</options></div>
+   
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items"><label>職場で自分がいじめにあっている（セクハラ、パワハラを含む）</label></div>
+      <div class="mltcg_itemsa"><input name="entry.110256271_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.110256271_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.110256271_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.110256271_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>私たちの職場では、お互いに理解し認め合っている</label></div>
+      <div class="mltcg_itemsa"><input name="entry.540518314_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.540518314_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.540518314_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.540518314_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>仕事をしていると、活力がみなぎるように感じる</label></div>
+      <div class="mltcg_itemsa"><input name="entry.2054379243_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.2054379243_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.2054379243_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.2054379243_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>自分の仕事に誇りを感じる</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1012273807_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1012273807_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1012273807_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1012273807_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>今月の自分の仕事の出来は、他の人にくらべて良かったと思う</label></div>
+      <div class="mltcg_itemsa"><input name="entry.200413141_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.200413141_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.200413141_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.200413141_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>指示された仕事をきちんとやりとげている</label></div>
+      <div class="mltcg_itemsa"><input name="entry.874058110_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.874058110_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.874058110_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.874058110_sentinel" type="radio" value="ちがう" required/></div>
+    <div class="mltcg_items"><label>自分に期待されている仕事は十分にこなしている</label></div>
+      <div class="mltcg_itemsa"><input name="entry.1950508147_sentinel" type="radio" value="そうだ" required/></div>
+      <div class="mltcg_itemsb"><input name="entry.1950508147_sentinel" type="radio" value="まあそうだ" required/></div>
+      <div class="mltcg_itemsc"><input name="entry.1950508147_sentinel" type="radio" value="ややちがう" required/></div>
+      <div class="mltcg_itemsd"><input name="entry.1950508147_sentinel" type="radio" value="ちがう" required/></div>
+  </div>
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>職場までの通勤時間はどのくらいですか（往復にかかる時間）<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1486499523_sentinel" type="radio" value="15分未満" required/><label>15分未満</label></div>
+      <div class="radio_options"><input name="entry.1486499523_sentinel" type="radio" value="15分~30分未満" required/><label>15分~30分未満</label></div>
+      <div class="radio_options"><input name="entry.1486499523_sentinel" type="radio" value="30分~60分未満" required/><label>30分~60分未満</label></div>
+      <div class="radio_options"><input name="entry.1486499523_sentinel" type="radio" value="60分以上" required/><label>60分以上</label></div>
+  </div>  
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>１週間あたりの労働時間（残業時間も含む）はどのくらいですか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1186446717_sentinel" type="radio" value="0~15時間" required/><label>0~15時間</label></div>
+      <div class="radio_options"><input name="entry.1186446717_sentinel" type="radio" value="15~30時間" required/><label>15~30時間</label></div>
+      <div class="radio_options"><input name="entry.1186446717_sentinel" type="radio" value="30~35時間" required/><label>30~35時間</label></div>
+      <div class="radio_options"><input name="entry.1186446717_sentinel" type="radio" value="35~40時間" required/><label>35~40時間</label></div>
+      <div class="radio_options"><input name="entry.1186446717_sentinel" type="radio" value="40~45時間" required/><label>40~45時間</label></div>
+      <div class="radio_options"><input name="entry.1186446717_sentinel" type="radio" value="45~50時間" required/><label>45~50時間</label></div>
+      <div class="radio_options"><input name="entry.1186446717_sentinel" type="radio" value="50~55時間" required/><label>50~55時間</label></div>
+      <div class="radio_options"><input name="entry.1186446717_sentinel" type="radio" value="55~60時間" required/><label>55~60時間</label></div>
+      <div class="radio_options"><input name="entry.1186446717_sentinel" type="radio" value="60時間以上" required/><label>60時間以上</label></div>
+  </div>  
+ 
+ <!--***********************************************************************************************************************************************************************--> 
+ <h2>最後に、新型コロナウイルスに関するストレスや影響についてお伺いします。</h2>
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>この１か月、新型コロナウイルスはあなたにとってどれほどストレスを与えていますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.142113505_sentinel" type="radio" value="全くストレスはない" required/><label>全くストレスはない</label></div>
+      <div class="radio_options"><input name="entry.142113505_sentinel" type="radio" value="あまりストレスはない" required/><label>あまりストレスはない</label></div>
+      <div class="radio_options"><input name="entry.142113505_sentinel" type="radio" value="どちらでもない" required/><label>どちらでもない</label></div>
+      <div class="radio_options"><input name="entry.142113505_sentinel" type="radio" value="ややストレス" required/><label>ややストレス</label></div>
+      <div class="radio_options"><input name="entry.142113505_sentinel" type="radio" value="かなりストレス" required/><label>かなりストレス</label></div>
+  </div>  
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>今まで、新型コロナウイルスはあなたの生活にどれほど影響がありましたか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1928804820_sentinel" type="radio" value="全くなかった" required/><label>全くなかった</label></div>
+      <div class="radio_options"><input name="entry.1928804820_sentinel" type="radio" value="あまりなかった" required/><label>あまりなかった</label></div>
+      <div class="radio_options"><input name="entry.1928804820_sentinel" type="radio" value="どちらでもない" required/><label>どちらでもない</label></div>
+      <div class="radio_options"><input name="entry.1928804820_sentinel" type="radio" value="ややあった" required/><label>ややあった</label></div>
+      <div class="radio_options"><input name="entry.1928804820_sentinel" type="radio" value="かなりあった" required/><label>かなりあった</label></div>
+  </div>  
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>今まで、新型コロナウイルスはあなたの仕事にどれほど影響がありましたか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.175017157_sentinel" type="radio" value="全くなかった" required/><label>全くなかった</label></div>
+      <div class="radio_options"><input name="entry.175017157_sentinel" type="radio" value="あまりなかった" required/><label>あまりなかった</label></div>
+      <div class="radio_options"><input name="entry.175017157_sentinel" type="radio" value="どちらでもない" required/><label>どちらでもない</label></div>
+      <div class="radio_options"><input name="entry.175017157_sentinel" type="radio" value="ややあった" required/><label>ややあった</label></div>
+      <div class="radio_options"><input name="entry.175017157_sentinel" type="radio" value="かなりあった" required/><label>かなりあった</label></div>
+  </div>  
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>今後、新型コロナウイルスはあなたの生活にどれほど影響があると思いますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.226029897_sentinel" type="radio" value="全くない" required/><label>全くない</label></div>
+      <div class="radio_options"><input name="entry.226029897_sentinel" type="radio" value="あまりない" required/><label>あまりない</label></div>
+      <div class="radio_options"><input name="entry.226029897_sentinel" type="radio" value="どちらでもない" required/><label>どちらでもない</label></div>
+      <div class="radio_options"><input name="entry.226029897_sentinel" type="radio" value="ややある" required/><label>ややある</label></div>
+      <div class="radio_options"><input name="entry.226029897_sentinel" type="radio" value="かなりある" required/><label>かなりある</label></div>
+  </div> 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>今後、新型コロナウイルスはあなたの仕事にどれほど影響があると思いますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.1689720537_sentinel" type="radio" value="全くない" required/><label>全くない</label></div>
+      <div class="radio_options"><input name="entry.1689720537_sentinel" type="radio" value="あまりない" required/><label>あまりない</label></div>
+      <div class="radio_options"><input name="entry.1689720537_sentinel" type="radio" value="どちらでもない" required/><label>どちらでもない</label></div>
+      <div class="radio_options"><input name="entry.1689720537_sentinel" type="radio" value="ややある" required/><label>ややある</label></div>
+      <div class="radio_options"><input name="entry.1689720537_sentinel" type="radio" value="かなりある" required/><label>かなりある</label></div>
+  </div> 
+
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>新型コロナウイルスの影響はいつ収束していると思いますか<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.269627150_sentinel" type="radio" value="半年未満" required/><label>半年未満</label></div>
+      <div class="radio_options"><input name="entry.269627150_sentinel" type="radio" value="１年未満" required/><label>１年未満</label></div>
+      <div class="radio_options"><input name="entry.269627150_sentinel" type="radio" value="３年未満" required/><label>３年未満</label></div>
+      <div class="radio_options"><input name="entry.269627150_sentinel" type="radio" value="それ以上" required/><label>それ以上</label></div>
+  </div> 
+ 
+ 
+ <!--質問項目：チェックボックスの書き方-->
+ <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
+ <!>
+ <div class="cbx">
+  <div class="cbx_text"><label>以下の項目について、新型コロナウイルス感染拡大が始まってから現在にいたるまで、それに関連してあなたのストレスの原因になったと思うものにすべてチェックを入れてください。（複数回答可）<span style="color: red;">*</span></label></div>
+    <div class="cbx_options"><input type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel_control" value="解雇・失業への恐れがある" required>解雇・失業への恐れがある</div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-01" value="収入が減少した"><label for="entry.1391728757_sentinel-01">収入が減少した</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-02" value="収入の減少への恐れがある"><label for="entry.1391728757_sentinel-02">収入の減少への恐れがある</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-03" value="国の補償を受けることが難しい（制限の厳しさ、手続きの難しさなど）"><label for="entry.1391728757_sentinel-03">国の補償を受けることが難しい（制限の厳しさ、手続きの難しさなど）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-04" value="自分の会社等の業績が悪くなった"><label for="entry.1391728757_sentinel-04">自分の会社等の業績が悪くなった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-05" value="自分の会社等の業績が悪くなるのではないかと不安である"><label for="entry.1391728757_sentinel-05">自分の会社等の業績が悪くなるのではないかと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-06" value="日本経済が悪くなるのではないかと不安である"><label for="entry.1391728757_sentinel-06">日本経済が悪くなるのではないかと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-07" value="就業スタイルの変化（テレワークや時差出勤など）があった"><label for="entry.1391728757_sentinel-07">就業スタイルの変化（テレワークや時差出勤など）があった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-08" value="在宅勤務ができない／しづらい"><label for="entry.1391728757_sentinel-08">在宅勤務ができない／しづらい</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-09" value="新型コロナウイルス感染症と類似の症状（微熱、気怠さなど）が出たときの欠勤基準があいまいである"><label for="entry.1391728757_sentinel-09">新型コロナウイルス感染症と類似の症状（微熱、気怠さなど）が出たときの欠勤基準があいまいである</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-10" value="仕事量が増えた"><label for="entry.1391728757_sentinel-10">仕事量が増えた</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-11" value="仕事の効率が落ちた"><label for="entry.1391728757_sentinel-11">仕事の効率が落ちた</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-12" value="自分が感染するのではないかと不安である"><label for="entry.1391728757_sentinel-12">自分が感染するのではないかと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-13" value="家族が感染するのではないかと不安である"><label for="entry.1391728757_sentinel-13">家族が感染するのではないかと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-14" value="新型コロナウイルス感染症への対策（手洗い、うがい、マスクなどの予防）を行うことに疲れた"><label for="entry.1391728757_sentinel-14">新型コロナウイルス感染症への対策（手洗い、うがい、マスクなどの予防）を行うことに疲れた</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-15" value="困ったときの相談先がない／分からない"><label for="entry.1391728757_sentinel-15">困ったときの相談先がない／分からない</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-16" value="感染者が増えて病院などが対応能力を超えてしまうのではないかと不安である"><label for="entry.1391728757_sentinel-16">感染者が増えて病院などが対応能力を超えてしまうのではないかと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-17" value="PCR検査を受けたいが受けられない"><label for="entry.1391728757_sentinel-17">PCR検査を受けたいが受けられない</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-18" value="持病や風邪などで病院に行きたくなっても行けない"><label for="entry.1391728757_sentinel-18">持病や風邪などで病院に行きたくなっても行けない</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-19" value="住居を失った"><label for="entry.1391728757_sentinel-19">住居を失った</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-20" value="住居を失う恐れがある"><label for="entry.1391728757_sentinel-20">住居を失う恐れがある</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-21" value="自分や家族が感染し、個人情報や行動の内容が明らかにされた"><label for="entry.1391728757_sentinel-21">自分や家族が感染し、個人情報や行動の内容が明らかにされた</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-22" value="自分や家族が感染したら、個人情報や行動の内容が明らかにされるかもしれないと不安である"><label for="entry.1391728757_sentinel-22">自分や家族が感染したら、個人情報や行動の内容が明らかにされるかもしれないと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-23" value="新型コロナウイルスに関連して、会社や学校などの場所で不当な扱いを受けた（出勤を拒否される、業務内容の変更をさせられたなど）"><label for="entry.1391728757_sentinel-23">新型コロナウイルスに関連して、会社や学校などの場所で不当な扱いを受けた（出勤を拒否される、業務内容の変更をさせられたなど）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-24" value="新型コロナウイルスに関連して、会社や学校などの場所で不当な扱いを受けるかもしれないと不安である（出勤を拒否される、業務内容の変更をさせられたなど）"><label for="entry.1391728757_sentinel-24">新型コロナウイルスに関連して、会社や学校などの場所で不当な扱いを受けるかもしれないと不安である（出勤を拒否される、業務内容の変更をさせられたなど）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-25" value="新型コロナウイルスに関連して、周囲や同僚から悪口・陰口を言われたり、のけ者にされたりした"><label for="entry.1391728757_sentinel-25">新型コロナウイルスに関連して、周囲や同僚から悪口・陰口を言われたり、のけ者にされたりした</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-26" value="新型コロナウイルスに関連して、周囲や同僚から悪口・陰口を言われたり、のけ者にされたりするかもしれないと不安である"><label for="entry.1391728757_sentinel-26">新型コロナウイルスに関連して、周囲や同僚から悪口・陰口を言われたり、のけ者にされたりするかもしれないと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-27" value="家族間で摩擦が増えた（DVも含む）"><label for="entry.1391728757_sentinel-27">家族間で摩擦が増えた（DVも含む）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-28" value="人との接し方や付き合い方が難しくなった（人と話すときにマスクをつけないといけないなど）"><label for="entry.1391728757_sentinel-28">人との接し方や付き合い方が難しくなった（人と話すときにマスクをつけないといけないなど）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-29" value="新型コロナウイルスに関して何が正しい情報かわからない"><label for="entry.1391728757_sentinel-29">新型コロナウイルスに関して何が正しい情報かわからない</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-30" value="毎日、ネットやテレビで新型コロナウイルスの話題ばかりが流れるようになった"><label for="entry.1391728757_sentinel-30">毎日、ネットやテレビで新型コロナウイルスの話題ばかりが流れるようになった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-31" value="食料品が手に入らなくなった"><label for="entry.1391728757_sentinel-31">食料品が手に入らなくなった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-32" value="食料品が手に入らなくなるのではないかと不安である"><label for="entry.1391728757_sentinel-32">食料品が手に入らなくなるのではないかと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-33" value="日用品（ティッシュペーパー、トイレットペーパー、オムツ、生理用品、保存食品など）が手に入らなくなった"><label for="entry.1391728757_sentinel-33">日用品（ティッシュペーパー、トイレットペーパー、オムツ、生理用品、保存食品など）が手に入らなくなった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-34" value="日用品（ティッシュペーパー、トイレットペーパー、オムツ、生理用品、保存食品など）が手に入らなくなるのではないかと不安である"><label for="entry.1391728757_sentinel-34">日用品（ティッシュペーパー、トイレットペーパー、オムツ、生理用品、保存食品など）が手に入らなくなるのではないかと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-35" value="予防する商品（マスク、消毒液など）が手に入らなくなった"><label for="entry.1391728757_sentinel-35">予防する商品（マスク、消毒液など）が手に入らなくなった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-36" value="予防する商品（マスク、消毒液など）が手に入らなくなるのではないかと不安である"><label for="entry.1391728757_sentinel-36">予防する商品（マスク、消毒液など）が手に入らなくなるのではないかと不安である</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-37" value="生活費（食費など）が増えた"><label for="entry.1391728757_sentinel-37">生活費（食費など）が増えた</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-38" value="子どもの学校が休校や分散登校になった、または幼稚園や保育園が休園や登園自粛になった"><label for="entry.1391728757_sentinel-38">子どもの学校が休校や分散登校になった、または幼稚園や保育園が休園や登園自粛になった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-39" value="友人や離れた家族との交流機会が減った"><label for="entry.1391728757_sentinel-39">友人や離れた家族との交流機会が減った</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-40" value="自分や家族の家事（炊事、洗濯、掃除、子供の世話など）の負担が増えた"><label for="entry.1391728757_sentinel-40">自分や家族の家事（炊事、洗濯、掃除、子供の世話など）の負担が増えた</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-41" value="冠婚葬祭、学校や会社の行事ができなくなった"><label for="entry.1391728757_sentinel-41">冠婚葬祭、学校や会社の行事ができなくなった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-42" value="自分や家族が運動不足になった"><label for="entry.1391728757_sentinel-42">自分や家族が運動不足になった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-43" value="人込みを避けるために移動手段がなくなった／限定された"><label for="entry.1391728757_sentinel-43">人込みを避けるために移動手段がなくなった／限定された</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-44" value="時間を持て余すようになった"><label for="entry.1391728757_sentinel-44">時間を持て余すようになった</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-45" value="子どもの成長に支障が出るのではないかと不安である（学習の遅れ、学力の低下、運動不足など）"><label for="entry.1391728757_sentinel-45">子どもの成長に支障が出るのではないかと不安である（学習の遅れ、学力の低下、運動不足など）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-46" value="感染拡大以前ほど外出ができなくなった（趣味、習い事、買い物、外食、ライブなど）"><label for="entry.1391728757_sentinel-46">感染拡大以前ほど外出ができなくなった（趣味、習い事、買い物、外食、ライブなど）</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.1391728757_sentinel" id="entry.1391728757_sentinel-47" value="自分が感染したときに生活できなくなるのではないかと不安である（食料の確保や子どもの世話など）"><label for="entry.1391728757_sentinel-47">自分が感染したときに生活できなくなるのではないかと不安である（食料の確保や子どもの世話など）</label></div>
+ </div>
+  
+  <!-- jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script>
+    //====================
+    //チェックボックス必須化
+    //====================
+      $(function() {
+          //チェックしたら発火
+          $('.check').change(function() {
+   
+              //選択したinputのname値を変数に格納
+              var name = $(this).attr('name');
+   
+              //control用のIDを連結
+              var control_name = name + '_control';
+              var control_checkbox = document.getElementById( control_name );
+ 
+              //チェックされているチェックボックスの数が0より多い場合
+              if ($("input[name='" + name + "']:checked").length > 0) {
+                  //チェック有効
+                  control_checkbox.required = false;
+              } else {
+                  //チェック有効
+                  control_checkbox.required = true;
+              }
+          });
+      });
+  </script>
+ 
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>１年後の景気は、今と比べてどうなると思いますか。当てはまるものを１つ選んでください。<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.785235839_sentinel" type="radio" value="非常に良くなる" required/><label>非常に良くなる</label></div>
+      <div class="radio_options"><input name="entry.785235839_sentinel" type="radio" value="良くなる" required/><label>良くなる</label></div>
+      <div class="radio_options"><input name="entry.785235839_sentinel" type="radio" value="変わらない" required/><label>変わらない</label></div>
+      <div class="radio_options"><input name="entry.785235839_sentinel" type="radio" value="悪くなる" required/><label>悪くなる</label></div>
+      <div class="radio_options"><input name="entry.785235839_sentinel" type="radio" value="非常に悪くなる" required/><label>非常に悪くなる</label></div>
+  </div> 
+ 
+  
+ 
+  <!--質問項目：マルチプルチョイスグリッドの書き方-->
+  <div class="mltcg_o7">
+    <!--質問文-->
+    <div class="mltcg_o7_text"><label>以下の機関・団体が⾏っている新型コロナウイルス対策について、あなたはどの程度満⾜していますか。当てはまるものを１つ選んでください。<span style="color: red;">*</span></label></div>
+    
+    <!--選択肢-->
+    <div class="mltcg_o7_options1"><options>非常に満足</options></div>
+    <div class="mltcg_o7_options2"><options>満足</options></div>
+    <div class="mltcg_o7_options3"><options>やや満足</options></div>
+    <div class="mltcg_o7_options4"><options>どちらでもない</options></div>
+    <div class="mltcg_o7_options5"><options>やや不満	</options></div>
+    <div class="mltcg_o7_options6"><options>不満</options></div>
+    <div class="mltcg_o7_options7"><options>非常に不満</options></div>
+    
+    <!--項目とラジオボタン-->
+    <div class="mltcg_items1"><label>国</label></div>
+      <div class="mltcg_items1a"><input name="entry.854472760_sentinel" type="radio" value="非常に満足" required/></div>
+      <div class="mltcg_items1b"><input name="entry.854472760_sentinel" type="radio" value="満足" required/></div>
+      <div class="mltcg_items1c"><input name="entry.854472760_sentinel" type="radio" value="やや満足" required/></div>
+      <div class="mltcg_items1d"><input name="entry.854472760_sentinel" type="radio" value="どちらでもない" required/></div>
+      <div class="mltcg_items1e"><input name="entry.854472760_sentinel" type="radio" value="やや不満" required/></div>
+      <div class="mltcg_items1f"><input name="entry.854472760_sentinel" type="radio" value="不満" required/></div>
+      <div class="mltcg_items1g"><input name="entry.854472760_sentinel" type="radio" value="非常に不満" required/></div>
+    <div class="mltcg_items1"><label>自治体</label></div>
+      <div class="mltcg_items1a"><input name="entry.444704606_sentinel" type="radio" value="非常に満足" required/></div>
+      <div class="mltcg_items1b"><input name="entry.444704606_sentinel" type="radio" value="満足" required/></div>
+      <div class="mltcg_items1c"><input name="entry.444704606_sentinel" type="radio" value="やや満足" required/></div>
+      <div class="mltcg_items1d"><input name="entry.444704606_sentinel" type="radio" value="どちらでもない" required/></div>
+      <div class="mltcg_items1e"><input name="entry.444704606_sentinel" type="radio" value="やや不満" required/></div>
+      <div class="mltcg_items1f"><input name="entry.444704606_sentinel" type="radio" value="不満" required/></div>
+      <div class="mltcg_items1g"><input name="entry.444704606_sentinel" type="radio" value="非常に不満" required/></div>
+    <div class="mltcg_items1"><label>勤務先</label></div>
+      <div class="mltcg_items1a"><input name="entry.1039688895_sentinel" type="radio" value="非常に満足" required/></div>
+      <div class="mltcg_items1b"><input name="entry.1039688895_sentinel" type="radio" value="満足" required/></div>
+      <div class="mltcg_items1c"><input name="entry.1039688895_sentinel" type="radio" value="やや満足" required/></div>
+      <div class="mltcg_items1d"><input name="entry.1039688895_sentinel" type="radio" value="どちらでもない" required/></div>
+      <div class="mltcg_items1e"><input name="entry.1039688895_sentinel" type="radio" value="やや不満" required/></div>
+      <div class="mltcg_items1f"><input name="entry.1039688895_sentinel" type="radio" value="不満" required/></div>
+      <div class="mltcg_items1g"><input name="entry.1039688895_sentinel" type="radio" value="非常に不満" required/></div>
+  </div>
+  
+ 
+ <!--質問項目：ラジオボタンの書き方-->
+ <!--"name"に同じ項目を入れておけば、１つを選択すれば他のが自動的に消えるようになる-->
+  <div class="radio_o2">
+    <div class="radio_o2_text"><label>新型コロナウイルスに対する国・自治体・勤務先の方針として、感染対策と経済対策のどちらを重視するべきだと考えますか。当てはまるものを１つ選んでください。<span style="color: red;">*</span></label></div>
+      <div class="radio_options"><input name="entry.239348211_sentinel" type="radio" value="主に感染対策を重視すべきだ" required/><label>主に感染対策を重視すべきだ</label></div>
+      <div class="radio_options"><input name="entry.239348211_sentinel" type="radio" value="どちらかと言えば、感染対策を重視すべきだ" required/><label>どちらかと言えば、感染対策を重視すべきだ</label></div>
+      <div class="radio_options"><input name="entry.239348211_sentinel" type="radio" value="どちらかと言えば、経済対策を重視すべきだ" required/><label>どちらかと言えば、経済対策を重視すべきだ</label></div>
+      <div class="radio_options"><input name="entry.239348211_sentinel" type="radio" value="主に経済対策を重視すべきだ" required/><label>主に経済対策を重視すべきだ</label></div>
+  </div> 
+ 
+ <!--質問項目：チェックボックスの書き方-->
+ <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
+ <!>
+ <div class="cbx">
+  <div class="cbx_text"><label>以下の項目について、国や自治体などに期待しますか。当てはまるものすべてにチェックを入れてください。（複数回答可）<span style="color: red;">*</span></label></div>
+    <div class="cbx_options"><input type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel_control" value="低利融資などの金融支援" required>低利融資などの金融支援</div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-01" value="消費活動活性化対策"><label for="entry.199969362_sentinel-01">消費活動活性化対策</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-02" value="設備投資や販路開拓支援"><label for="entry.199969362_sentinel-02">設備投資や販路開拓支援</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-03" value="テレワークや在宅勤務導入支援"><label for="entry.199969362_sentinel-03">テレワークや在宅勤務導入支援</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-04" value="従業員休業等に伴う補償の拡充"><label for="entry.199969362_sentinel-04">従業員休業等に伴う補償の拡充</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-05" value="観光誘客対策"><label for="entry.199969362_sentinel-05">観光誘客対策</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-06" value="上記以外の助成金や給付金"><label for="entry.199969362_sentinel-06">上記以外の助成金や給付金</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-07" value="マスクや消毒液などの感染拡大防止に関する物資確保への支援"><label for="entry.199969362_sentinel-07">マスクや消毒液などの感染拡大防止に関する物資確保への支援</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-08" value="税金の免除、減免"><label for="entry.199969362_sentinel-08">税金の免除、減免</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-09" value="支援に対する申請の簡素化・迅速化"><label for="entry.199969362_sentinel-09">支援に対する申請の簡素化・迅速化</label></div>
+    <div class="cbx_options"><input class="check" type="checkbox" name="entry.199969362_sentinel" id="entry.199969362_sentinel-10" value="その他"><label for="entry.199969362_sentinel-10">その他</label><input type="text" placeholder="期待すること" name="entry.199969362_sentinel.other_option_response"/></div>
+ </div>
+  
+  <!-- jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script>
+    //====================
+    //チェックボックス必須化
+    //====================
+      $(function() {
+          //チェックしたら発火
+          $('.check').change(function() {
+   
+              //選択したinputのname値を変数に格納
+              var name = $(this).attr('name');
+   
+              //control用のIDを連結
+              var control_name = name + '_control';
+              var control_checkbox = document.getElementById( control_name );
+ 
+              //チェックされているチェックボックスの数が0より多い場合
+              if ($("input[name='" + name + "']:checked").length > 0) {
+                  //チェック有効
+                  control_checkbox.required = false;
+              } else {
+                  //チェック有効
+                  control_checkbox.required = true;
+              }
+          });
+      });
+  </script>
+ 
+ 
+ <!--質問項目：段落の書き方-->
+ <!--"textarea"のところにnameを入れる-->
+  <div class="para">
+    <label2>新型コロナウイルスに関連して、ご自身やご家族が苦労したことがあれば教えてください。※自由記述</label2><br>
+    <textarea placeholder="回答を入力"name="entry.XXXXXXXXXXXXXXXXX" required></textarea>
+  </div>
+ 
+ 
+  <button type="submit">送信</button>
+
  
  </form>
  
