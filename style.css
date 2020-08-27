@@ -19,6 +19,18 @@ body {
   margin: 0 auto;
 }
 
+.face{
+  position:relative;
+}
+
+.button1{
+  width:240px;
+  height:40px;
+  position:absolute;
+  z-index:100;
+  top:800px;
+  left:30px;
+}
 
 h1{
    margin-top:40px;
