@@ -17,6 +17,7 @@ body {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  background-color: rgb(249,231,191);
 }
 
 .face{
