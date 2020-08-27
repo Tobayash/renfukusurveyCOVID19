@@ -24,12 +24,15 @@ body {
 }
 
 .button1{
-  width:240px;
-  height:40px;
   position:absolute;
   z-index:100;
-  top:800px;
-  left:30px;
+  top:40%;
+  left:5px;
+  padding: 10px 50px;
+  font-size:30px;
+  color: rgb(194,165,121);
+  backgroud-color: rgb(95,70,40);
+  border-style: none;
 }
 
 h1{
