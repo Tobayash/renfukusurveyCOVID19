@@ -23,7 +23,7 @@ body {
   position:relative;
 }
 
-.button1{
+button.button1{
   position:absolute;
   z-index:100;
   top:40%;
