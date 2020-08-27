@@ -26,12 +26,12 @@ body {
 button.button1{
   position:absolute;
   z-index:100;
-  top:45%;
+  top:500px;
   left:15px;
   padding: 1% 5%;
   font-size:10%;
   color: rgb(194,165,121);
-  backgroud-color: rgb(95,70,40);
+  backgroud: rgb(95,70,40);
   border-style: none;
 }
 
