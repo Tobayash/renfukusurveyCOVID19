@@ -26,8 +26,8 @@ body {
 button.button1{
   position:absolute;
   z-index:100;
-  top:60%;
-  left:10%;
+  top:90%;
+  left:30%;
   padding: 10px 50px;
   font-size:10px;
   color: rgb(194,165,121);
