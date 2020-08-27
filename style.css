@@ -43,44 +43,15 @@ div.doui{
   padding-bottom: 10px;
 }
 
-.douicheck{
-  margin: 0 0 0 0;
+label.doui{
+	font-size: 20px;
 }
 
-/* ラベルのスタイル　*/
-.douicheck label {
-	padding-left:		10%;			/* ラベルの位置 */
-	font-size:		20px;
-	line-height:		20px;
-	display:		inline-block;
-	cursor:			pointer;
-	position:		relative;
+input[type="checkbox"]{
+	-ms-transform: scale(2);
+	transform: scale(2);
+	margin-right: 10px;
 }
-
-/* ボックスのスタイル */
-.douicheck label:before {
-	content:		'';
-	width:			20px;			/* ボックスの横幅 */
-	height:			20px;			/* ボックスの縦幅 */
-	display:		inline-block;
-	position:		absolute;
-	left:			0;
-	background-color:	#fff;
-}
-
-/* 元のチェックボックスを表示しない */
-.douicheck input[type=checkbox] {
-	display:		none;
-}
-
-/* チェックした時のスタイル */
-.douicheck input[type=checkbox]:checked + label:before {
-	content:		'\2713';		/* チェックの文字 */ 
-	font-size:		20px;			/* チェックのサイズ */
-	color:			#fff;			/* チェックの色 */
-	background-color:	rgb(95,113,91);			/* チェックした時の色 */
-}
-
 
 button.button2{
   font-size: 20px;
