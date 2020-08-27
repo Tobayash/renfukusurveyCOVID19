@@ -37,7 +37,8 @@ button.button1{
 }
 
 div.doui{
-  magin-left: 10%;
+  padding-left: 50px;
+  padding-bottom: 10px;
 }
 
 label.doui{
