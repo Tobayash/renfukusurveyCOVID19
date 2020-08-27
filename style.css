@@ -39,18 +39,19 @@ button.button1{
 /*ここから同意書のところ*/
 div.doui{
   padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 10px;
 }
 
 .douicheck{
-  margin: 0 0 10px 20px;
+  margin: 0 0 0 0;
 }
 
 /* ラベルのスタイル　*/
 .douicheck label {
-	padding-left:		38px;			/* ラベルの位置 */
-	font-size:		32px;
-	line-height:		32px;
+	padding-left:		10%;			/* ラベルの位置 */
+	font-size:		20px;
+	line-height:		20px;
 	display:		inline-block;
 	cursor:			pointer;
 	position:		relative;
@@ -59,25 +60,25 @@ div.doui{
 /* ボックスのスタイル */
 .douicheck label:before {
 	content:		'';
-	width:			32px;			/* ボックスの横幅 */
-	height:			32px;			/* ボックスの縦幅 */
+	width:			20px;			/* ボックスの横幅 */
+	height:			20px;			/* ボックスの縦幅 */
 	display:		inline-block;
 	position:		absolute;
 	left:			0;
 	background-color:	#fff;
-	box-shadow:		inset 1px 2px 3px 0px #000;
-	border-radius:		6px 6px 6px 6px;
 }
+
 /* 元のチェックボックスを表示しない */
 .douicheck input[type=checkbox] {
 	display:		none;
 }
+
 /* チェックした時のスタイル */
 .douicheck input[type=checkbox]:checked + label:before {
 	content:		'\2713';		/* チェックの文字 */ 
-	font-size:		34px;			/* チェックのサイズ */
+	font-size:		20px;			/* チェックのサイズ */
 	color:			#fff;			/* チェックの色 */
-	background-color:	#06f;			/* チェックした時の色 */
+	background-color:	rgb(95,113,91);			/* チェックした時の色 */
 }
 
 
