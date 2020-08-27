@@ -11,7 +11,7 @@ body {
   font-family: 'Noto Sans Japanese';
   font-size: 15px;
   color: #000000;
-  background: #FFFFFF;
+  background-color: rgb(194,165,121);
 }
 
 .wrapper {
