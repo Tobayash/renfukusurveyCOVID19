@@ -29,8 +29,8 @@ button.button1{
   padding: 10px 50px;
   position: absolute;
   z-index: 100;
-  top: 60em;
-  left: 10em;
+  top: 60%;
+  left: 10%;
   background-color: rgb(95,70,40);
   border-style: none;
 }
