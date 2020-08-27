@@ -36,6 +36,18 @@ button.button1{
   border-style: none;
 }
 
+p.doui{
+  font-size:15px;
+}
+
+button.button2{
+  font-size: 20px;
+  color: rgb(194,165,121);  
+  padding: 10px 50px;
+  background-color: rgb(95,70,40);
+  border-style: none;
+}
+
 h1{
    margin-top:40px;
    margin-bottom:40px;
