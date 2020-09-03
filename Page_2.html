@@ -13,11 +13,10 @@
 <div class="wrapper">
 <h2>[1]　はじめに、あなたご自身についておうかがいします。最もあてはまるものを選んでください。</h2>
   
- <!--質問項目：プルダウンの書き方-->
- <!--"select"がプルダウン。"select"のところにnameを入れる-->
- <!--required属性を機能させるためには一番上のoption valueを""(空欄)にする-->
- <div class="dropdown">
- 　<div class="dropdown_text"><label>(1) 所属 (五十音順)<span style="color: red;">*</span></label></div>
+<table>
+ <tr>
+ <th>(1)</th> <th>ご所属 (五十音順＋ABC順)<span style="color: red;">*</span></th>
+  <td>
      <div class="dropdown_option"><select name="entry.65827775" required>
        <option value="">選択してください</option>
        <option value="会津碍子職員労働組合">会津碍子職員労働組合</option>
@@ -415,8 +414,9 @@
 　　　　<option value="OKIテクノパワーシステムズ職員労働組合">OKIテクノパワーシステムズ職員労働組合</option>
 　　　　<option value="OKIメタルテック職員労働組合">OKIメタルテック職員労働組合</option>
 　　　　<option value="TBK職員労働組合">TBK職員労働組合</option>
-     </select></div>
- </div>
+     </select></div>  <!--ドロップダウンボックスはここまで-->
+ </td>
+</tr> <!--ここで一行-->
   
   
   <div class="dropdown">
