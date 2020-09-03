@@ -10,10 +10,12 @@
 <!--"form"に"action="URL" method=POST"を追加する-->
 <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdfnJypBnz8rmbjsOW-PF7p2D_BNIuCXDlT57xHxtR3TbSMPQ/formResponse" method=POST>
 
-<div class="wrapper" >
-<h2>[1]　はじめに、あなたご自身についておうかがいします。最もあてはまるものを選んでください。</h2>
-  
-<table border="1" margin-left="10px" width="300">
+<div class="wrapper" > <!--wrapperで質問項目全体の下地を作る-->
+<div class="container"> <!--containerで質問セクションごとの下地を作る-->
+ <h2>[1]　はじめに、あなたご自身についておうかがいします。最もあてはまるものを選んでください。</h2>
+
+
+<table border="1">
  <tr>
  <th>(1)</th> <th>ご所属 (五十音順＋ABC順)<span style="color: red;">*</span></th>
   <td>
@@ -707,7 +709,7 @@
      </select></div>
   </div>
  
-
+</div> <!--containerの終わり-->
  
  <!--***********************************************************************************************************************************************************************--> 
  <h2>[2] 続いて、あなたの健康や気持ちについてお尋ねします。</h2>
@@ -1718,7 +1720,7 @@
   </div>
  
  
-  <button type="submit">送信</button>
+  <button class="button2" type="submit">送信</button>
 
  </div>
  </form>
