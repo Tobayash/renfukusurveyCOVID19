@@ -1,0 +1,349 @@
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  src: url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+}
+
+body {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Noto Sans Japanese';
+  font-size: 15px;
+  color: #000000;
+  background-color: rgb(194,165,121);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(249,231,191);
+}
+
+.container {
+  max-width: 900px;
+  margin-left: 10 auto;
+  background-color: #FFFFFF;
+}
+
+.face{
+  position:relative;
+}
+
+button.button1{
+  font-size: 20px;
+  color: rgb(194,165,121);  
+  padding: 10px 50px;
+  position: absolute;
+  z-index: 100;
+  top: 45%;
+  left: 10%;
+  background-color: rgb(95,70,40);
+  border-style: none;
+}
+
+/*ここから同意書のところ*/
+div.doui{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10px;
+}
+
+label.doui{
+	font-size: 20px;
+}
+
+input[type="checkbox"]{
+	-ms-transform: scale(2);
+	transform: scale(2);
+	margin-right: 15px;
+}
+
+button.button2{
+  font-size: 20px;
+  color: rgb(194,165,121);  
+  padding: 10px 50px;
+  background-color: rgb(95,70,40);
+  border-style: none;
+}
+
+h1{
+   margin-top:40px;
+   margin-bottom:40px;
+   font-size: 3.5em;
+   text-align: center;  
+   color : #669999;
+}
+
+h2{
+  font-size: 20px;
+  padding-left:20px;
+}
+
+p.message {
+  padding-left:20px;
+  font-size:15px;
+}
+
+/*同意チェック用css*/
+div.cbx_doui {
+  margin-left:30px;
+  margin-right:30px;
+  margin-top:30px;
+  margin-bottom:30px;
+  padding-left:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 15px;
+}
+
+
+
+/*プルダウン用css*/
+div.dropdown {
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left:30px;
+  margin-right:30px;
+  margin-top:30px;
+  margin-bottom:30px;
+  padding-left:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.dropdown_text {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding-bottom: 10px;
+}
+
+.dropdown_opton {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+
+
+/*質問テキスト用css*/
+div.text {
+  grid-auto-rows: auto;
+  margin-left:30px;
+  margin-right:30px;
+  margin-top:30px;
+  margin-bottom:30px;
+  padding-left:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/*チェックボックス用css*/
+div.cbx {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  margin-left:30px;
+  margin-right:30px;
+  margin-top:30px;
+  margin-bottom:30px;
+  padding-left:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.cbx_text {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-bottom: 10px;
+}
+
+.cbx_options {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+
+
+
+/*自由記述用css*/
+div.para {
+  display: grid;
+  grid-auto-rows: auto;
+  margin-left:30px;
+  margin-right:30px;
+  margin-top:30px;
+  margin-bottom:30px;
+  padding-left:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+textarea {
+  margin-left:10px;
+  margin-right:10px;
+  line-height: 1.5em;
+}
+
+/* ===== Resets and Housekeeping ===== */
+
+
+/* ===== Actual Styles ===== */
+
+/* ===== Horizontal Rule ===== */
+.rule {
+  margin: 10px 0;
+  border: none;
+  height: 1.5px;
+  background-image: linear-gradient(left, #f0f0f0, #c9bbae, #f0f0f0);
+}
+
+/* ===== Select Box ===== */
+.sel {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 3em 2em;
+  width: 350px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.sel::before {
+  position: absolute;
+  content: '\f063';
+  font-family: 'FontAwesome';
+  font-size: 2em;
+  color: #FFF;
+  right: 20px;
+  top: calc(50% - 0.5em);
+}
+
+.sel.active::before {
+  transform: rotateX(-180deg);
+}
+
+.sel__placeholder {
+  display: block;
+  font-family: 'Quicksand';
+  font-size: 2.3em;
+  color: #838e95;
+  padding: 0.2em 0.5em;
+  text-align: left;
+  pointer-events: none;
+  user-select: none;
+  visibility: visible;
+}
+
+.sel.active .sel__placeholder {
+  visibility: hidden;
+}
+
+.sel__placeholder::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.2em 0.5em;
+  content: attr(data-placeholder);
+  visibility: hidden;
+}
+
+.sel.active .sel__placeholder::before {
+  visibility: visible;
+}
+
+.sel__box {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: -4px;
+  display: none;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1em;
+  background-color: #FFF;
+  width: calc(100% + 8px);
+  box-sizing: border-box;
+}
+
+.sel.active .sel__box {
+  display: block;
+  animation: fadeInUp 500ms;
+}
+
+.sel__box__options {
+  display: list-item;
+  font-family: 'Quicksand';
+  font-size: 1.5em;
+  color: #838e95;
+  padding: 0.5em 1em;
+  user-select: none;
+}
+
+.sel__box__options::after {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  font-size: 0.5em;
+  margin-left: 5px;
+  display: none;
+}
+
+.sel__box__options.selected::after {
+  display: inline;
+}
+
+.sel__box__options:hover {
+  background-color: #ebedef;
+}
+
+/* ----- Select Box Black Panther ----- */
+.sel {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+}
+
+.sel--black-panther {
+  z-index: 3;
+}
+
+/* ----- Select Box Superman ----- */
+.sel--superman {
+/*   display: none; */
+  z-index: 2;
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
