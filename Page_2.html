@@ -1,14 +1,14 @@
- <head>
+<head>
   <meta name="robots" content="noindex"/>
-  <meta charset=”UTF-8″><!–-文字コードの種類としてUTF-8を指定します 文字化けを防ぐため–->
+  <meta charset="UTF-8"><!–-文字コードの種類としてUTF-8を指定します 文字化けを防ぐため–->
   <title>COVID19による勤労者のメンタルヘルス調査</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 
 <body>
-<!--"form"に"action="URL" method=POST"を追加する-->
-<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdfnJypBnz8rmbjsOW-PF7p2D_BNIuCXDlT57xHxtR3TbSMPQ/formResponse" method=POST>
+
+<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdfnJypBnz8rmbjsOW-PF7p2D_BNIuCXDlT57xHxtR3TbSMPQ/formResponse" method=POST> <!--"form"に"action="URL" method=POST"を追加する-->
 
 <div class="wrapper" > <!--wrapperで質問項目全体の下地を作る-->
 <div class="face">
@@ -20,9 +20,9 @@
  <h1>[1] はじめに、あなたご自身についておうかがいします。最もあてはまるものを選んでください。</h1>
 
 <div class="container"> <!--containerで質問セクションごとの下地を作る-->
-<table border=1 style="text-align: left; padding-top: 10px; padding-bottom: 10px; vertical-align: center; ">
+ <table border=1 style="text-align: left; padding-top: 10px; padding-bottom: 10px; vertical-align: center; ">
  <tr>
- <th>(1)</th> <th nowrap>ご所属 (五十音順＋ABC順)<span style="color: red;">*</span></th>
+  <th>(1)</th> <th nowrap>ご所属 (五十音順＋ABC順)<span style="color: red;">*</span></th>
   <td>
      <div class="select-wrap"><select name="entry.65827775" required>
        <option value="">選択してください</option>
@@ -466,7 +466,8 @@
   <th>(5)</th><th colspan="2">配偶者の方はいらっしゃいますか<span style="color: red;">*</span></th>
  </tr>
  <tr>
-   <td colspan="3">
+  <td></td>
+   <td colspan="2">
       <div class="select-wrap"><select name="entry.1489587340" required>
         <option value="">選択してください</option>
         <option value="いる">いる</option>
@@ -479,7 +480,8 @@
   <th>(6)</th><th colspan="2">扶養家族はいらっしゃいますか<span style="color: red;">*</span></th>
  </tr>
  <tr>
-   <td colspan="3">
+  <td></td>
+   <td colspan="2">
       <div class="select-wrap"><select name="entry.1916717872" required>
         <option value="">選択してください</option>
         <option value="いない">いない</option>
@@ -593,55 +595,60 @@
       });
   </script>
  
-  </table>
- 
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(9) あなたは障害者手帳をお持ちですか<span style="color: red;">*</span></label></div>
+
+ <tr><th>(9)</th><th colspan="2">あなたは障害者手帳をお持ちですか<span style="color: red;">*</span></th></tr>
+ <tr><td></td>
+  <td colspan="2">
       <div class="dropdown_option"><select name="entry.629451408" required>
         <option value="">選択してください</option>
         <option value="はい">はい</option>
         <option value="いいえ">いいえ</option>
       </select></div>
-  </div>
+  </td></tr>
 
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(10) あなたは新型コロナウイルスの感染症に影響する糖尿病や呼吸器疾患などの基礎疾患をお持ちですか<span style="color: red;">*</span></label></div>
+  <tr><th>(10)</th><th colspan="2">あなたは新型コロナウイルスの感染症に影響する糖尿病や呼吸器疾患などの基礎疾患をお持ちですか<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.1289574442" required>
         <option value="">選択してください</option>
         <option value="はい">はい</option>
         <option value="いいえ">いいえ</option>
       </select></div>
-  </div>
-
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(11) 現在、あなたは精神疾患で精神科や心療内科で治療を受けていますか<span style="color: red;">*</span></label></div>
+  </td></tr>
+ 
+  <tr><th>(11)</th><th colspan="2">現在、あなたは精神疾患で精神科や心療内科で治療を受けていますか<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.489799179" required>
         <option value="">選択してください</option>
         <option value="はい">はい</option>
         <option value="いいえ">いいえ</option>
       </select></div>
-  </div>
+  </td></tr>
  
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(12) 新型コロナウイルスに関して検疫の経験はありますか<span style="color: red;">*</span></label></div>
+  <tr><th>(12)</th><th colspan="2">新型コロナウイルスに関して検疫の経験はありますか<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.1378272707" required>
         <option value="">選択してください</option>
         <option value="はい">はい</option>
         <option value="いいえ">いいえ</option>
       </select></div>
-  </div>
+  </td></tr>
  
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(13) 自分自身や家族、同僚に新型コロナウイルスに感染経験のある方はいますか<span style="color: red;">*</span></label></div>
+  <tr><th>(13)</th><th colspan="2">自分自身や家族、同僚に新型コロナウイルスに感染経験のある方はいますか<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.2111865047" required>
         <option value="">選択してください</option>
         <option value="はい">はい</option>
         <option value="いいえ">いいえ</option>
       </select></div>
-  </div>
+  </td></tr>
  
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(14) あなたのお仕事の業種（近いもの）についてお尋ねします<span style="color: red;">*</span></label></div>
+  <tr><th>(14)</th><th colspan="2">あなたのお仕事の業種（近いもの）についてお尋ねします<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.824288666" required>
         <option value="">選択してください</option>
         <option value="製造業">製造業</option>
@@ -650,19 +657,21 @@
         <option value="運輸・交通">運輸・交通</option>
         <option value="医療・介護">医療・介護</option>
       </select></div>
-  </div>
+  </td></tr>
  
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(15) あなたの職位についてお尋ねします<span style="color: red;">*</span></label></div>
+  <tr><th>(15)</th><th colspan="2">あなたの職位についてお尋ねします<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.443763765" required>
         <option value="">選択してください</option>
         <option value="係長相当職以上">係長相当職以上</option>
         <option value="役職にはついていない">役職にはついていない</option>
       </select></div>
-  </div>
+  </td></tr>
  
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(16) あなたの勤務先の地域についてお尋ねします<span style="color: red;">*</span></label></div>
+  <tr><th>(16)</th><th colspan="2">あなたの勤務先の地域についてお尋ねします<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.404926435" required>
         <option value="">選択してください</option>
         <option value="県北">県北</option>
@@ -673,10 +682,11 @@
         <option value="相双">相双</option>
         <option value="その他">その他</option>
      </select></div>
-  </div>
+  </td></tr>
   
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(17) あなたの最終学歴は次のどれですか<span style="color: red;">*</span></label></div>
+  <tr><th>(17)</th><th colspan="2">あなたの最終学歴は次のどれですか<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.1970473144" required>
         <option value="">選択してください</option>
         <option value="中学まで">中学まで</option>
@@ -684,10 +694,11 @@
         <option value="短大・専門学校">短大・専門学校</option>
         <option value="大学・大学院">大学・大学院</option>
      </select></div>
-  </div>
+  </td></tr>
  
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(18) 現在の職場での在籍年数についてお尋ねします<span style="color: red;">*</span></label></div>
+  <tr><th>(18)</th><th colspan="2">現在の職場での在籍年数についてお尋ねします<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.477811772" required>
         <option value="">選択してください</option>
         <option value="1年目">1年目</option>
@@ -697,20 +708,22 @@
         <option value="15年以下">15年以下</option>
         <option value="それ以上">それ以上</option>
      </select></div>
-  </div>
+  </td></tr>
  
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(19) 雇用形態（近いもの）についてお尋ねします。ここでの非正規社員とはアルバイト、パート契約社員、派遣社員等を指します。<span style="color: red;">*</span></label></div>
+  <tr><th>(19)</th><th colspan="2">雇用形態（近いもの）についてお尋ねします。ここでの非正規社員とはアルバイト、パート契約社員、派遣社員等を指します。<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.546725023" required>
         <option value="">選択してください</option>
         <option value="正規社員">正規社員</option>
         <option value="非正規社員（有期）">非正規社員（有期）</option>
         <option value="非正規社員（無期）">非正規社員（無期）</option>
      </select></div>
-  </div>
+  </td></tr>
 
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(20) 昨年の年収についてお尋ねします<span style="color: red;">*</span></label></div>
+  <tr><th>(20)</th><th colspan="2">昨年の年収についてお尋ねします<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.1386160070" required>
         <option value="">選択してください</option>
         <option value="50万円未満">50万円未満</option>
@@ -724,10 +737,11 @@
         <option value="700~999万円">700~999万円</option>
         <option value="1000万円以上">1000万円以上</option> 
      </select></div>
-  </div>
+  </td></tr>
  
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(21) 現在の暮らし向きについて、経済的に見てどのように感じていますか<span style="color: red;">*</span></label></div>
+  <tr><th>(21)</th><th colspan="2">現在の暮らし向きについて、経済的に見てどのように感じていますか<span style="color: red;">*</span></th></tr>
+  <tr><td></td>
+   <td colspan="2">
       <div class="dropdown_option"><select name="entry.1913881618" required>
         <option value="">選択してください</option>
         <option value="苦しい">苦しい</option>
@@ -736,8 +750,8 @@
       <option value="ややゆとりがある">ややゆとりがある</option>
       <option value="ゆとりがある">ゆとりがある</option>
      </select></div>
-  </div>
- 
+  </td></tr>
+ </table>
 </div> <!--containerの終わり-->
  
  <!--***********************************************************************************************************************************************************************--> 
