@@ -463,10 +463,10 @@
   </tr>
 
  <tr>
-  <th>(5)</th><th nowrap>配偶者の方はいらっしゃいますか<span style="color: red;">*</span></th>
+  <th>(5)</th><th colspan="2">配偶者の方はいらっしゃいますか<span style="color: red;">*</span></th>
  </tr>
  <tr>
-   <td>
+   <td colspan="3">
       <div class="select-wrap"><select name="entry.1489587340" required>
         <option value="">選択してください</option>
         <option value="いる">いる</option>
@@ -476,10 +476,10 @@
   </tr>
  
  <tr>
-  <th>(6)</th><th nowrap>扶養家族はいらっしゃいますか<span style="color: red;">*</span></th>
+  <th>(6)</th><th colspan="2">扶養家族はいらっしゃいますか<span style="color: red;">*</span></th>
  </tr>
  <tr>
-   <td>
+   <td colspan="3">
       <div class="select-wrap"><select name="entry.1916717872" required>
         <option value="">選択してください</option>
         <option value="いない">いない</option>
@@ -493,12 +493,13 @@
 
  <!--質問項目：チェックボックスの書き方-->
  <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
- <!>
- <div class="cbx">
+
+
   <tr>
-  <div class="cbx_text"><label>(7) 同居しているご家族について当てはまる方にチェックを入れてください<span style="color: red;">*</span></label></div>
+  <th>(7)</th><th colspan="2">同居しているご家族について当てはまる方にチェックを入れてください<span style="color: red;">*</span></th>
   </tr>
-  <tr>
+  <tr><td colspan="3">
+    <div class="cbx">
     <div class="cbx_options"><input type="checkbox" name="entry.1334116676" id="entry.1334116676_control" value="単身（ひとり暮らし）" required>単身（ひとり暮らし）</div>
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1334116676" id="entry.1334116676-01" value="配偶者・パートナー"><label for="entry.1334116676-01">配偶者・パートナー</label></div>
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1334116676" id="entry.1334116676-02" value="子ども"><label for="entry.1334116676-02">子ども</label></div>
@@ -507,8 +508,9 @@
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1334116676" id="entry.1334116676-05" value="孫"><label for="entry.1334116676-05">孫</label></div>
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1334116676" id="entry.1334116676-06" value="兄弟・姉妹（義理の兄弟・姉妹）"><label for="entry.1334116676-06">兄弟・姉妹（義理の兄弟・姉妹）</label></div>
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1334116676" id="entry.1334116676-07" value="その他"><label for="entry.1334116676-07">その他</label></div>
-  </tr>
- </div>
+    </div>
+  </td></tr>
+
 
   
   <!-- jQueryの読み込み -->
@@ -543,11 +545,12 @@
  <!--質問項目：チェックボックスの書き方-->
  <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
 
- <div class="cbx">
+  
   <tr>
-  <div class="cbx_text"><label>(8) 同居している子どもについて当てはまる方にチェックを入れてください（複数回答可）<span style="color: red;">*</span></label></div>
+  <th>(8)</th><th colspan="2">同居している子どもについて当てはまる方にチェックを入れてください（複数回答可）<span style="color: red;">*</span></th>
   </tr>
-  <tr>
+  <tr><td colspan="3">
+    <div class="cbx">
     <div class="cbx_options"><input type="checkbox" name="entry.1904514247" id="entry.1904514247_control" value="子どもはいない" required>子どもはいない</div> 
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247" id="entry.1904514247-01" value="乳児（0～2歳）"><label for="entry.1904514247-01">乳児（0～2歳）</label></div>
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247" id="entry.1904514247-02" value="幼児（3～6歳）"><label for="entry.1904514247-02">幼児（3～6歳）</label></div>
@@ -558,8 +561,8 @@
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247" id="entry.1904514247-07" value="大学生・大学院生・短大生・専門学校生"><label for="entry.1904514247-07">大学生・大学院生・短大生・専門学校生</label></div>
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247" id="entry.1904514247-08" value="社会人（アルバイトを含む）"><label for="entry.1904514247-08">社会人（アルバイトを含む）</label></div>
     <div class="cbx_options"><input class="check" type="checkbox" name="entry.1904514247" id="entry.1904514247-09" value="その他"><label for="entry.1904514247-09">その他</label></div>
-  </tr>
- </div>
+    </div>
+  </td></tr>
   
   <!-- jQueryの読み込み -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
