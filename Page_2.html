@@ -22,8 +22,8 @@
 <div class="container"> <!--containerで質問セクションごとの下地を作る-->
 <table>
  <tr>
- <th>(1)</th> <th colspan="2" nowrap>ご所属 (五十音順＋ABC順)<span style="color: red;">*</span></th>
-  <td colspan="3">
+ <th>(1)</th> <th nowrap>ご所属 (五十音順＋ABC順)<span style="color: red;">*</span></th>
+  <td>
      <div class="dropdown_option"><select name="entry.65827775" required>
        <option value="">選択してください</option>
        <option value="会津碍子職員労働組合">会津碍子職員労働組合</option>
@@ -435,7 +435,8 @@
         <option value="その他">その他</option>
       </select></div>
    </td>
-
+ </tr>
+ <tr>
   <th>(3)</th> <th nowrap>年齢<span style="color: red;">*</span></th>
    <td>
       <div class="dropdown_option"><select name="entry.772551668" required>
@@ -450,27 +451,31 @@
       </select></div>
    </td>
  </tr>
-</table>
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(4) 国籍<span style="color: red;">*</span></label></div>
+ <tr>
+  <th>(4)</th><th nowrap>国籍<span style="color: red;">*</span></th>
+   <td>
       <div class="dropdown_option"><select name="entry.818749214" required>
         <option value="">選択してください</option>
         <option value="日本">日本</option>
         <option value="その他">その他</option>
       </select></div>
-  </div>
+    </td>
+  </tr>
 
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(5) 配偶者の方はいらっしゃいますか<span style="color: red;">*</span></label></div>
+ <tr>
+  <th>(5)</th><th nowrap>配偶者の方はいらっしゃいますか<span style="color: red;">*</span></th>
+   <td>
       <div class="dropdown_option"><select name="entry.1489587340" required>
         <option value="">選択してください</option>
         <option value="いる">いる</option>
         <option value="いない">いない</option>
       </select></div>
-  </div>
+    </td>
+  </tr>
  
-   <div class="dropdown">
-    <div class="dropdown_text"><label>(6) 扶養家族はいらっしゃいますか<span style="color: red;">*</span></label></div>
+ <tr>
+  <th>(6)</th><th nowrap>扶養家族はいらっしゃいますか<span style="color: red;">*</span></th>
+   <td>
       <div class="dropdown_option"><select name="entry.1916717872" required>
         <option value="">選択してください</option>
         <option value="いない">いない</option>
@@ -478,7 +483,9 @@
         <option value="２人いる">２人いる</option>
         <option value="３人以上いる">３人以上いる</option>
       </select></div>
-  </div>
+    </td>
+  </tr>
+ 
   
  <!--質問項目：チェックボックスの書き方-->
  <!--チェックボックスは複数での回答必須にひと工夫必要。以下のjQueryを使うと良い。作成に当たっては、idとlabelのforはnameにそろえること、「いずれにも当てはまらない」はname+"_control"にすること-->
