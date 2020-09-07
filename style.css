@@ -146,7 +146,39 @@ div.dropdown {
   font-size: 15px;
 }
 
+.select-wrap{
+position:relative;
+overflow:hidden;
+display:inline-block;
+min-width:192px;
+min-width:12em;
+background-color:#ffffff;
+background-image:-webkit-linear-gradient(top, #ffffff 0%, #dfe0d9 100%);
+background-image:linear-gradient(top, #ffffff 0%, #dfe0d9 100%);
+border:1px solid #c0c0c0;
+color:#333;
+}
 
+.select-wrap select{
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+appearance:none;
+position:relative;
+z-index:2;
+display:block;
+width:200%;/* fallback non calc support */
+width:-webkit-calc(100% + 5em);
+margin:0;
+padding:11px 35px 11px 11px;
+padding:.6875rem 2.1875rem .6875rem .6875rem;
+background:transparent;
+border:0;
+outline:none;
+font-size:16px;
+font-size:1rem;
+line-height:1.5;
+}
 
 /*質問テキスト用css*/
 div.text {
