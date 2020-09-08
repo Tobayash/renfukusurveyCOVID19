@@ -42,7 +42,7 @@ button.button1{
 @media screen and (max-width: 480px) {
 	button.button1{
 		width:80%;
-		border-radius:10%;
+		border-radius:10px;
 }
 
 /*ここから同意書のところ*/
