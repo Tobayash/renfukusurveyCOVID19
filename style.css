@@ -84,6 +84,7 @@ button.button3{              /*送信ボタンの設定*/
 
 p.sectitle{          　　　　　   /*セクションのタイトル*/
   font-size: 1.25em;
+  font-weight: bold;
   margin: 5%;
 }
 
