@@ -90,12 +90,12 @@ p.sectitle{          　　　　　   /*セクションのタイトル*/
 
 h2{          　　　　　   /*中セクションのタイトル*/
   font-size: 1em;
-  margin: 5%;
+  margin: 5% 5% 0% 5%;   /*上、右、下、左*/
   padding-top:20px;
 }
 
 .table_background{
-	margin: 2% 5%;
+	margin: 2% 5%;   /*上下、右左*/
 	text-align: left;
 	background-color: #FFFFFF;
 }
