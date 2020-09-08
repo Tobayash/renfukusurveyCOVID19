@@ -82,7 +82,7 @@ button.button3{              /*送信ボタンの設定*/
   border-style: none;
 }
 
-h1.sectitle{          　　　　　   /*セクションのタイトル*/
+p.sectitle{          　　　　　   /*セクションのタイトル*/
   font-size: 1.25em;
   margin: 5%;
 }
