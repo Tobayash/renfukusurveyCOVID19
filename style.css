@@ -195,24 +195,11 @@ div.cbx {
 
 
 /*自由記述用css*/
-div.para {
-  display: grid;
-  grid-auto-rows: auto;
-  margin-left:30px;
-  margin-right:30px;
-  margin-top:30px;
-  margin-bottom:30px;
-  padding-left:20px;
-  padding-top:20px;
-  padding-bottom:20px;
-  background: #FFFFFF;
-  color: #000000;
-}
-
 textarea {
   margin-left:10px;
   margin-right:10px;
-  line-height: 1.5em;
+  line-height: 3em;
+  line-weight: 80%;
 }
 
 	
