@@ -29,7 +29,7 @@ body {
 button.button1{
   font-size: 1.25em;
   color: rgb(194,165,121);  
-  padding: 1.25em 3.125em;
+  padding: 0.625em 3.125em;
   text-align: center;
   position: absolute;
   z-index: 100;
@@ -52,10 +52,6 @@ div.doui{
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 10px;
-}5
-
-label.doui{
-	font-size: 20px;
 }
 
 input[type="checkbox"]{
@@ -65,14 +61,22 @@ input[type="checkbox"]{
 }
 
 button.button2{
-  font-size: 20px;
+  font-size: 1.25em;
   color: rgb(194,165,121);  
-  padding: 10px 50px;
+  padding:  0.625em 3.125em;
   background-color: rgb(95,70,40);
   border-style: none;
 }
 
-
+@media screen and (max-width: 480px) {
+	button.button2{
+		width:80%;
+		padding: 0.625em auto;
+		border-radius:10px;
+}
+/*Page1.htmlのcssここまで*/
+	
+	
 /*ここから質問紙のところ*/
 
 .wrapper2 {
