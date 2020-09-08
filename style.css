@@ -88,13 +88,16 @@ p.sectitle{          　　　　　   /*セクションのタイトル*/
   margin: 5%;
 }
 
-h2{
+h2{          　　　　　   /*中セクションのタイトル*/
   font-size: 1em;
   margin: 5%;
   padding-top:20px;
 }
 
-
+.table_background{
+	margin: 2% 5%;
+	background-color: #FFFFFF;
+}
 
 /*プルダウン用css*/
 div.dropdown {
