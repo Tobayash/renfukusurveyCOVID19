@@ -29,6 +29,7 @@ body {
 button.button1{
   font-size: 1.25em;
   color: rgb(194,165,121);  
+  padding: 1.25em 3.125em;
   text-align: center;
   position: absolute;
   z-index: 100;
@@ -36,6 +37,12 @@ button.button1{
   left: 10%;
   background-color: rgb(95,70,40);
   border-style: none;
+}
+
+@media screen and (max-width: 480px) {
+	button.button1{
+		left: 0%;
+		width:100%;
 }
 
 /*ここから同意書のところ*/
