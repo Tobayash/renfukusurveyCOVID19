@@ -196,10 +196,9 @@ div.cbx {
 
 /*自由記述用css*/
 textarea {
-  margin-left:10px;
-  margin-right:10px;
-  line-height: 3em;
-  line-weight: 80%;
+  margin-left:5%;
+  height: 6em;
+  width: 80%;
 }
 
 	
