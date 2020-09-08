@@ -79,6 +79,22 @@ button.button2{
 	
 /*Page2.htmlのcss-----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+button.button3{              /*送信ボタンの設定*/
+  font-size: 1.25em;
+  color: rgb(194,165,121);  
+  padding:  0.625em 3.125em;
+  left: 10%;
+  background-color: rgb(95,70,40);
+  border-style: none;
+}
+
+@media screen and (max-width: 480px) {
+	button.button3{
+		width:80%;
+		padding: 0.625em auto;
+		border-radius:10px;
+}
+	
 .wrapper2 {
   max-width: 1000px;
   margin: 0 auto;
