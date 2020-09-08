@@ -91,6 +91,7 @@ p.sectitle{          　　　　　   /*セクションのタイトル*/
 .table_background{
 	margin: 2% 5%;   /*上下、右左*/
 	text-align: left;
+	vertical^align: top;
 	background-color: #FFFFFF;
 }
 
