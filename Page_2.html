@@ -27,7 +27,7 @@
 
 <p class="sectitle">[1] あなたご自身についておうかがいします。最もあてはまるものを選んでください。</p>
 
-<!--<div class="container"> containerで質問セクションごとの下地を作る-->
+
  <table class="table_background">
  <tr>
   <th style="padding-top:20px;">(1)</th> <th colspan="2" nowrap style="padding-top:20px;">ご所属 (五十音順＋ABC順)<span style="color: red;">*</span></th>
@@ -443,7 +443,7 @@
         <option value="男性">男性</option>
         <option value="女性">女性</option>
         <option value="その他">その他</option>
-      </select></label>
+      </select></div>
    </td>
  </tr>
  <tr>
@@ -762,16 +762,18 @@
      </select></div>
   </td></tr>
  </table>
-<!--</div> containerの終わり-->
+
  
  <!--***********************************************************************************************************************************************************************--> 
 <p class="sectitle">[2] 続いて、あなたの健康や気持ちについてお尋ねします。</p>
   
- 
- 　<h2>(1) 以下の項目であてはまるものを1つ選んでください。</h2>
-     <div class="dropdown">
-        <div class="dropdown_text"><label>a. ほとんどの面で、私の人生は私の理想に近い<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.450480971" required>
+ <table class="table_background">
+ 　<tr><th>(1)</th><th>以下の項目であてはまるものを1つ選んでください。</th></tr>
+   <tr><td>a.</td><td>ほとんどの面で、私の人生は私の理想に近い<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.450480971" required>
             <option value="">選択してください</option>
             <option value="全くそう思わない">全くそう思わない</option>
             <option value="ほとんどそう思わない">ほとんどそう思わない</option>
@@ -781,10 +783,13 @@
             <option value="かなりそう思う">かなりそう思う</option>
             <option value="とてもそう思う">とてもそう思う</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>b. 私の人生は、とても素晴らしい状態だ<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.2054909505" required>
+     </td>
+   </tr>
+   <tr><td>b.</td><td>私の人生は、とても素晴らしい状態だ<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.2054909505" required>
             <option value="">選択してください</option>
             <option value="全くそう思わない">全くそう思わない</option>
             <option value="ほとんどそう思わない">ほとんどそう思わない</option>
@@ -794,10 +799,13 @@
             <option value="かなりそう思う">かなりそう思う</option>
             <option value="とてもそう思う">とてもそう思う</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>c. 私は自分の人生に満足している<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1718042787" required>
+     </td>
+   </tr>
+   <tr><td>c.</td><td>私は自分の人生に満足している<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1718042787" required>
             <option value="">選択してください</option>
             <option value="全くそう思わない">全くそう思わない</option>
             <option value="ほとんどそう思わない">ほとんどそう思わない</option>
@@ -807,10 +815,13 @@
             <option value="かなりそう思う">かなりそう思う</option>
             <option value="とてもそう思う">とてもそう思う</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>d. 私はこれまで、自分の人生に求める大切なものを得てきた<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1762786165" required>
+     </td>
+   </tr>
+   <tr><td>d.</td><td>私はこれまで、自分の人生に求める大切なものを得てきた<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1762786165" required>
             <option value="">選択してください</option>
             <option value="全くそう思わない">全くそう思わない</option>
             <option value="ほとんどそう思わない">ほとんどそう思わない</option>
@@ -820,10 +831,13 @@
             <option value="かなりそう思う">かなりそう思う</option>
             <option value="とてもそう思う">とてもそう思う</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>e. もう一度人生をやり直せるとしても、ほとんど何も変えないだろう<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.353985140" required>
+     </td>
+   </tr>
+   <tr><td>e.</td><td>もう一度人生をやり直せるとしても、ほとんど何も変えないだろう<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.353985140" required>
             <option value="">選択してください</option>
             <option value="全くそう思わない">全くそう思わない</option>
             <option value="ほとんどそう思わない">ほとんどそう思わない</option>
@@ -833,13 +847,15 @@
             <option value="かなりそう思う">かなりそう思う</option>
             <option value="とてもそう思う">とてもそう思う</option>
          </select></div>
-      </div>
-
- 
-  　<h2>(2) 過去30日の間に、どれくらいの頻度で次のことがありましたか。最もあてはまるものを選んでください。</h2>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>a. 神経過敏に感じましたか。<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1124785618" required>
+     </td>
+   </tr>
+   
+   <tr><th>(2)</th><th>過去30日の間に、どれくらいの頻度で次のことがありましたか。最もあてはまるものを選んでください。</th></tr>
+   <tr><td>a.</td><td>神経過敏に感じましたか。<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1124785618" required>
             <option value="">選択してください</option>
             <option value="全くない">全くない</option>
             <option value="少しだけ">少しだけ</option>
@@ -847,10 +863,13 @@
             <option value="たいてい">たいてい</option>
             <option value="いつも">いつも</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>b. 絶望的だと感じましたか。<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1669798562" required>
+     </td>
+   </tr>
+   <tr><td>b.</td><td>絶望的だと感じましたか。<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1669798562" required>
             <option value="">選択してください</option>
             <option value="全くない">全くない</option>
             <option value="少しだけ">少しだけ</option>
@@ -858,10 +877,13 @@
             <option value="たいてい">たいてい</option>
             <option value="いつも">いつも</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>c. そわそわ、落ち着かなく感じましたか。<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.847266806" required>
+     </td>
+   </tr>
+   <tr><td>c.</td><td>そわそわ、落ち着かなく感じましたか。<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.847266806" required>
             <option value="">選択してください</option>
             <option value="全くない">全くない</option>
             <option value="少しだけ">少しだけ</option>
@@ -869,10 +891,13 @@
             <option value="たいてい">たいてい</option>
             <option value="いつも">いつも</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>d. 気分が沈み込んで、何が起こっても気が晴れないように感じましたか。<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.516245428" required>
+     </td>
+   </tr>
+   <tr><td>d.</td><td>気分が沈み込んで、何が起こっても気が晴れないように感じましたか。<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.516245428" required>
             <option value="">選択してください</option>
             <option value="全くない">全くない</option>
             <option value="少しだけ">少しだけ</option>
@@ -880,10 +905,13 @@
             <option value="たいてい">たいてい</option>
             <option value="いつも">いつも</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>e. 何をするのも骨折りだと感じましたか。<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.227085804" required>
+     </td>
+   </tr>
+   <tr><td>e.</td><td>何をするのも骨折りだと感じましたか。<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.227085804" required>
             <option value="">選択してください</option>
             <option value="全くない">全くない</option>
             <option value="少しだけ">少しだけ</option>
@@ -891,10 +919,13 @@
             <option value="たいてい">たいてい</option>
             <option value="いつも">いつも</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>f. 自分は価値のない人間だと感じましたか。<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1487906983" required>
+     </td>
+   </tr>
+   <tr><td>f.</td><td>自分は価値のない人間だと感じましたか。<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1487906983" required>
             <option value="">選択してください</option>
             <option value="全くない">全くない</option>
             <option value="少しだけ">少しだけ</option>
@@ -902,226 +933,290 @@
             <option value="たいてい">たいてい</option>
             <option value="いつも">いつも</option>
          </select></div>
-      </div>
-  
- 
-  　<h2>(3) 最近1か月間のあなたの状態についてうかがいます。最もあてはまるものを選んでください。</h2>
-      <div class="dropdown">
-        <div class="dropdown_text"><label>a. 怒りを感じる<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.906781754" required>
+     </td>
+   </tr>
+   
+   <tr><th>(3)</th><th>最近1か月間のあなたの状態についてうかがいます。最もあてはまるものを選んでください。</th></tr>
+   <tr><td>a.</td><td>怒りを感じる<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.906781754" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>b. 内心腹立たしい<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.863234222" required>
+     </td>
+   <tr>
+   <tr><td>b.</td><td>内心腹立たしい<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.863234222" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>c. イライラしている<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.448834582" required>
+     </td>
+   </tr>
+   <tr><td>c.</td><td>イライラしている<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.448834582" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>d. ひどく疲れた<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1783904475" required>
+     </td>
+   </tr>
+   <tr><td>d.</td><td>ひどく疲れた<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1783904475" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>e. へとへとだ<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1569891222" required>
+     </td>
+   </tr>
+   <tr><td>e.</td><td>へとへとだ<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1569891222" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>f. だるい<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.509046176" required>
+     </td>
+   </tr>
+   <tr><td>f.</td><td>だるい<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.509046176" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>g. 気がはりつめている<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1440344241" required>
+     </td>
+   </tr>
+   <tr><td>g.</td><td>気がはりつめている<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1440344241" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>h. 不安だ<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.881573798" required>
+     </td>
+   </tr>
+   <tr><td>h.</td><td>不安だ<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.881573798" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>i. 落着かない<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1123053609" required>
+     </td>
+   </tr>
+   <tr><td>i.</td><td>落着かない<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1123053609" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>j. めまいがする<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1153169392" required>
+     </td>
+   </tr>   
+   <tr><td>j.</td><td>めまいがする<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1153169392" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>k. 体のふしぶしが痛む<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1815860124" required>
+     </td>
+   </tr>
+   <tr><td>k.</td><td>体のふしぶしが痛む<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+          <div class="select-wrap"><select name="entry.1815860124" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>l. 頭が重かったり頭痛がする<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.551194758" required>
+     </td>
+   </tr>
+   <tr><td>l.</td><td>頭が重かったり頭痛がする<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+        <div class="select-wrap"><select name="entry.551194758" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>m. 首筋や肩がこる<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1501794366" required>
+     </td>
+   </tr>
+   <tr><td>m.</td><td>首筋や肩がこる<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+        <div class="select-wrap"><select name="entry.1501794366" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>n. 腰が痛い<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.300908011" required>
+     </td>
+   </tr>
+   <tr><td>n.</td><td>腰が痛い<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+        <div class="select-wrap"><select name="entry.300908011" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>o. 目が疲れる<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1040359070" required>
+     </td>
+   </tr>
+   <tr><td>o.</td><td>目が疲れる<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+        <div class="select-wrap"><select name="entry.1040359070" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>p. 動悸や息切れがする<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1735277601" required>
+     </td>
+   </tr>
+   <tr><td>p.</td><td>動悸や息切れがする<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+        <div class="select-wrap"><select name="entry.1735277601" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>q. 胃腸の具合が悪い<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.395682006" required>
+     </td>
+   </tr>
+   <tr><td>q.</td><td>胃腸の具合が悪い<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+        <div class="select-wrap"><select name="entry.395682006" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>r. 食欲がない<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.341754620" required>
+     </td>
+   </tr>
+   <tr><td>r.</td><td>食欲がない<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+        <div class="select-wrap"><select name="entry.341754620" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
-      <div class="dropdown">
-      <div class="dropdown_text"><label>s. 便秘や下痢をする<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1476233247" required>
+     </td>
+   </tr>
+   <tr><td>s.</td><td>便秘や下痢をする<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+        <div class="select-wrap"><select name="entry.1476233247" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
- 
-       <div class="dropdown">
-      <div class="dropdown_text"><label>t. よく眠れない<span style="color: red;">*</span></label></div>
-          <div class="dropdown_option"><select name="entry.1417522779" required>
+     </td>
+   </tr>
+   <tr><td>t.</td><td>よく眠れない<span style="color: red;">*</span></td></tr>
+   <tr>
+     <td></td>
+     <td>
+        <div class="select-wrap"><select name="entry.1417522779" required>
             <option value="">選択してください</option>
             <option value="ほとんどなかった">ほとんどなかった</option>
             <option value="ときどきあった">ときどきあった</option>
             <option value="しばしばあった">しばしばあった</option>
             <option value="ほとんどいつもあった">ほとんどいつもあった</option>
          </select></div>
-      </div>
- 
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(4) あなたは過去1か月、睡眠によって休養が充分とれていますか。<span style="color: red;">*</span></label></div>
-      <div class="dropdown_option"><select name="entry.1638533731" required>
+     </td>
+   </tr>
+   
+   <tr><th>(4)</th><th>あなたは過去1か月、睡眠によって休養が充分とれていますか。<span style="color: red;">*</span></th></tr>
+   <tr>
+     <td></td>
+     <td>
+      <div class="select-wrap"><select name="entry.1638533731" required>
         <option value="">選択してください</option>
         <option value="充分とれている">充分とれている</option>
         <option value="まあまあとれている">まあまあとれている</option>
         <option value="あまりとれていない">あまりとれていない</option>
         <option value="まったくとれていない">まったくとれていない</option>
-     </select></div>
-  </div>
-
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(5) 1日に30分以上の運動を週に何日行っていますか。<span style="color: red;">*</span></label></div>
-      <div class="dropdown_option"><select name="entry.1233098540" required>
+      </select></div>
+     </td>
+   </tr>
+   
+   <tr><th>(5)</th><th>1日に30分以上の運動を週に何日行っていますか。<span style="color: red;">*</span></th></tr>
+   <tr>
+     <td></td>
+     <td>
+      <div class="select-wrap"><select name="entry.1233098540" required>
         <option value="">選択してください</option>
         <option value="運動無し">運動無し</option>
         <option value="1日">1日</option>
@@ -1131,45 +1226,55 @@
         <option value="5日">5日</option>
         <option value="6日">6日</option>
         <option value="7日">7日</option>
-     </select></div>
-  </div>
-
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(6) その運動習慣はどれほど続いていますか。<span style="color: red;">*</span></label></div>
-      <div class="dropdown_option"><select name="entry.1102782514" required>
+      </select></div>
+     </td>
+   </tr>
+   
+   <tr><th>(6)</th><th>その運動習慣はどれほど続いていますか。<span style="color: red;">*</span></th></tr>
+   <tr>
+     <td></td>
+     <td>
+      <div class="select-wrap"><select name="entry.1102782514" required>
         <option value="">選択してください</option>
         <option value="運動習慣はない">運動習慣はない</option>
         <option value="半年未満">半年未満</option>
         <option value="１年未満">１年未満</option>
         <option value="１年以上">１年以上</option>
-     </select></div>
-  </div>
- 
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(7) 今年の3月以前に比べて喫煙量は増えましたか。<span style="color: red;">*</span></label></div>
-      <div class="dropdown_option"><select name="entry.526469483" required>
+      </select></div>
+     </td>
+   </tr>
+   
+   <tr><th>(7)</th><th>今年の3月以前に比べて喫煙量は増えましたか。<span style="color: red;">*</span></th></tr>
+   <tr>
+     <td></td>
+     <td>
+      <div class="select-wrap"><select name="entry.526469483" required>
         <option value="">選択してください</option>
         <option value="増えた">増えた</option>
         <option value="変わらない">変わらない</option>
         <option value="減った">減った</option>
         <option value="3月以前から吸わない、または3月以前にやめた">3月以前から吸わない、または3月以前にやめた</option>
-     </select></div>
-  </div>
-
-  <div class="dropdown">
-    <div class="dropdown_text"><label>(8) 今年の3月以前に比べてお酒の量は増えましたか。<span style="color: red;">*</span></label></div>
-      <div class="dropdown_option"><select name="entry.46494410" required>
+      </select></div>
+     </td>
+   </tr>
+   
+   <tr><th>(8)</th><th>今年の3月以前に比べてお酒の量は増えましたか。<span style="color: red;">*</span></th></tr>
+   <tr>
+     <td></td>
+     <td>
+      <div class="select-wrap"><select name="entry.46494410" required>
         <option value="">選択してください</option>
         <option value="増えた">増えた</option>
         <option value="変わらない">変わらない</option>
         <option value="減った">減った</option>
         <option value="3月以前から飲まない、または3月以前にやめた">3月以前から飲まない、または3月以前にやめた</option>
-     </select></div>
-  </div>
+      </select></div>
+     </td>
+   </tr>
  
+ </table>
 
-
- <!--***********************************************************************************************************************************************************************--> 
+<!--***********************************************************************************************************************************************************************--> 
 <p class="sectitle">[3] 満足度についてうかがいます。最もあてはまるものを選んでください。</p>
   
   <div class="dropdown">
