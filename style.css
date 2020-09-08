@@ -96,6 +96,7 @@ h2{          　　　　　   /*中セクションのタイトル*/
 
 .table_background{
 	margin: 2% 5%;
+	text-align: left;
 	background-color: #FFFFFF;
 }
 
