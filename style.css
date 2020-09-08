@@ -21,10 +21,10 @@ body {
 }
 
 
+/*index.htmlのcss*/
 .face{
   position:relative; /*画像の上にボタンを貼るためのコード。下の.button1とセット*/
 }
-
 
 button.button1{
   font-size: 1.25em;
@@ -42,15 +42,17 @@ button.button1{
 @media screen and (max-width: 480px) {
 	button.button1{
 		width:80%;
+		padding: 0.625em auto;
 		border-radius:10px;
 }
-
-/*ここから同意書のところ*/
+/*index.htmlのcssここまで*/
+	
+/*Page1.htmlのcss*/
 div.doui{
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 10px;
-}
+}5
 
 label.doui{
 	font-size: 20px;
