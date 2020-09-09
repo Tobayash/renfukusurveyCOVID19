@@ -101,16 +101,26 @@ th{
 	
 }
 
+th.numbering {
+	width:4em;
+}
+
 td.alnumber {
 	vertical-align: top;
 	text-align: right;
+	width:4em;
+}
+
+td.alnumber2 {
+	text-align: right;
+	width:4em;
 }
 
 .gettingpadtop {
 	padding-top: 1.25em;
 }
 
-.gettingpadtail{
+tr.gettingpadtail th td {
 	padding-bottom: 1.5em;
 }
 
