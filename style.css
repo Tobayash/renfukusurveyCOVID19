@@ -130,12 +130,10 @@ td.alnumber2 {
 position:relative;
 overflow:hidden;
 display:inline-block;
-min-width:192px;
 min-width:12em;
-background-color:#ffffff;
-background-image:-webkit-linear-gradient(top, #ffffff 0%, #dfe0d9 100%);
-background-image:linear-gradient(top, #ffffff 0%, #dfe0d9 100%);
-border:1px solid #c0c0c0;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid rgba(0,0,0,0.3)
 color:#333;
 }
 
@@ -156,7 +154,6 @@ background:transparent;
 border:0;
 outline:none;
 font-size:16px;
-font-size:1rem;
 line-height:1.5;
 }
 
