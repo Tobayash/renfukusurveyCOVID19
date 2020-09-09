@@ -120,7 +120,7 @@ td.alnumber2 {
 	padding-top: 1.25em;
 }
 
-tr.gettingpadtail th td {
+tr.gettingpadtail th, td {
 	padding-bottom: 1.5em;
 }
 
