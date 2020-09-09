@@ -179,7 +179,7 @@ div.cbx {
 
 /*その他の自由記述css*/
 input.other_text{
-	margin-left:10%;
+	margin-left:6%;
 	width:90%;
 }
 
@@ -218,8 +218,8 @@ textarea {
 	}
 	
 	input.other_text{
-		width:60%;
-		height: 6em;
+		margin-left:10%;
+		width:90%;
 	}
 	
 	th.numbering {
