@@ -90,6 +90,7 @@ p.sectitle{          　　　　　   /*セクションのタイトル*/
 
 .table_background{
 	margin: 2% 5%;   /*上下、右左*/
+	width: 90%;
 	text-align: left;
 	background-color: #FFFFFF;
 }
@@ -98,6 +99,19 @@ th{
 	padding-top: 1.25em;
 	vertical-align: top;
 	
+}
+
+td.alnumber {
+	vertical-align: top;
+	text-align: right;
+}
+
+.gettingpadtop {
+	padding-top: 1.25em;
+}
+
+.gettingpadtail{
+	padding-bottom: 1.5em;
 }
 
 /*プルダウン用css*/
