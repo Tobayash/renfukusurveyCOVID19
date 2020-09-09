@@ -102,14 +102,14 @@ th{
 }
 
 th.numbering {
-	width:2.5em;
+	padding-left:0.5em;
+	width:3em;
 }
 
 td.alnumber {
 	vertical-align: top;
 	text-align: right;
-	padding-left:0.5em;
-	width:3em;
+	width:2.5em;
 }
 
 td.alnumber2 {
@@ -223,9 +223,7 @@ textarea {
 		height: 6em;
 	}
 	
-	td.alnumber {
-		vertical-align: top;
-		text-align: right;
+	th.numbering {
 		padding-left:0em;
 		width:2.5em;
 	}
