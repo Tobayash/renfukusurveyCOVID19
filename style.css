@@ -102,18 +102,18 @@ th{
 }
 
 th.numbering {
-	width:4em;
+	width:2.5em;
 }
 
 td.alnumber {
 	vertical-align: top;
 	text-align: right;
-	width:4em;
+	width:2.5em;
 }
 
 td.alnumber2 {
 	text-align: right;
-	width:4em;
+	width:2.5em;
 }
 
 .gettingpadtop {
