@@ -179,7 +179,8 @@ div.cbx {
 
 /*その他の自由記述css*/
 input.other_text{
-	width:60%;
+	margin-left:10%;
+	width:90%;
 }
 
 
