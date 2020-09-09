@@ -133,8 +133,8 @@ td.alnumber2 {
 	min-width:12em;
 	background-color: transparent;
 	border: none;
-	border-bottom: 1px solid rgba(0,0,0,0.3);
-	color:#333;
+	border-bottom: 2px solid rgba(0,0,0,0.3);
+	font-size:1.1em;
 }
 
 .select-wrap select{
@@ -150,6 +150,7 @@ td.alnumber2 {
 	padding:11px 35px 11px 11px;
 	background:transparent;
 	border:0;
+	font-size:5em;
 	outline:none;
 	line-height:1.5;
 }
