@@ -134,7 +134,6 @@ td.alnumber2 {
 	background-color: transparent;
 	border: none;
 	border-bottom: 2px solid rgba(0,0,0,0.3);
-	font-size:1.1em;
 }
 
 .select-wrap select{
@@ -147,10 +146,10 @@ td.alnumber2 {
 	width:200%;/* fallback non calc support */
 	width:-webkit-calc(100% + 5em);
 	margin:0;
-	padding:11px 35px 11px 11px;
+	padding:0.675em 2.25em 0.125em 0.675em;
 	background:transparent;
 	border:0;
-	font-size:5em;
+	font-size:1.2em;
 	outline:none;
 	line-height:1.5;
 }
