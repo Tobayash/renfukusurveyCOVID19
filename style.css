@@ -136,6 +136,10 @@ td.alnumber2 {
 	border-bottom: 2px solid rgba(0,0,0,0.3);
 }
 
+select::-ms-expand{
+	display:none;
+}
+
 .select-wrap select{
 	-webkit-appearance:none;
 	-moz-appearance:none;
@@ -149,7 +153,7 @@ td.alnumber2 {
 	padding:0.675em 2.25em 0.125em 0.675em;
 	background:transparent;
 	border:0;
-	font-size:1.2em;
+	font-size:1.15em;
 	outline:none;
 	line-height:1.5;
 }
