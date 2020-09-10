@@ -178,7 +178,7 @@ div.cbx {
 }
 
 /*その他の自由記述css*/
-input.other_text{
+textarea.other_text{
 	margin-left:6%;
 	width:90%;
 	height:2.3em;
@@ -186,7 +186,7 @@ input.other_text{
 
 
 /*自由記述用css*/
-textarea {
+textarea.last {
   margin-left:5%;
   height: 6em;
   width: 90%;
@@ -218,7 +218,7 @@ textarea {
 		border-radius:10px;
 	}
 	
-	input.other_text{
+	textarea.other_text{
 		margin-left:10%;
 		width:90%;
 	}
